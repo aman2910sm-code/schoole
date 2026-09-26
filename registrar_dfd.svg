@@ -1,0 +1,178 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1180" width="100%" height="100%" style="background:#ffffff; font-family: 'Times New Roman', Times, serif;">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M 0 2 L 8 5 L 0 8 z" fill="#000000" />
+    </marker>
+  </defs>
+
+  <!-- Double Page Border (Exact replica of Reference Page) -->
+  <rect x="40" y="40" width="820" height="1100" fill="none" stroke="#000000" stroke-width="2" />
+  <rect x="45" y="45" width="810" height="1090" fill="none" stroke="#000000" stroke-width="0.8" />
+
+  <!-- Top Left Header -->
+  <text x="65" y="100" font-size="14" font-weight="bold" fill="#000000">Level 1 DFD (Functional Decomposition)</text>
+
+  <!-- Centered Subtitles -->
+  <text x="450" y="125" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">1st Level DFD</text>
+  <text x="450" y="140" font-size="9" font-style="italic" text-anchor="middle" fill="#000000">1 Level DFD (Registrar DFD)</text>
+
+  <!-- Left Entity Box (Sharp Rectangle with Vertical Text) -->
+  <rect x="100" y="240" width="100" height="565" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <g transform="translate(150.0, 522.5) rotate(-90)">
+    <text x="0" y="5" font-size="15" font-weight="bold" text-anchor="middle" letter-spacing="4" fill="#000000">REGISTRAR</text>
+  </g>
+
+  <!-- Row 1: Process 4.1 -->
+  <ellipse cx="432.5" cy="270.0" rx="72.5" ry="30.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="432.5" y="264" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">4.1</text>
+  <text x="432.5" y="278" font-size="10" text-anchor="middle" fill="#000000">Login</text>
+
+  <!-- Row 1: Data Store (Open Right Box: top line, bottom line, left line) -->
+  <path d="M 760 245 L 610 245 L 610 295 L 760 295" fill="none" stroke="#000000" stroke-width="1.2" />
+  <text x="685.0" y="274.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">Registrar Table</text>
+
+  <!-- Entity -> Process (Upper Flow) -->
+  <line x1="200" y1="255" x2="360" y2="255" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="230.0" y="243" width="100" height="11" fill="#ffffff" />
+  <text x="280.0" y="252" font-size="8" text-anchor="middle" fill="#000000">login credentials</text>
+
+  <!-- Process -> Entity (Lower Flow) -->
+  <line x1="360" y1="285" x2="200" y2="285" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="245.0" y="287" width="70" height="11" fill="#ffffff" />
+  <text x="280.0" y="296" font-size="8" text-anchor="middle" fill="#000000">response</text>
+
+  <!-- Process -> Data Store (Upper Flow) -->
+  <line x1="505" y1="255" x2="610" y2="255" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="517.5" y="243" width="80" height="11" fill="#ffffff" />
+  <text x="557.5" y="252" font-size="8" text-anchor="middle" fill="#000000">check registrar</text>
+
+  <!-- Data Store -> Process (Lower Flow) -->
+  <line x1="610" y1="285" x2="505" y2="285" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="532.5" y="287" width="50" height="11" fill="#ffffff" />
+  <text x="557.5" y="296" font-size="8" text-anchor="middle" fill="#000000">reply</text>
+
+  <!-- Row 2: Process 4.2 -->
+  <ellipse cx="432.5" cy="395.0" rx="72.5" ry="30.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="432.5" y="389" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">4.2</text>
+  <text x="432.5" y="403" font-size="10" text-anchor="middle" fill="#000000">Student Admission</text>
+
+  <!-- Row 2: Data Store (Open Right Box: top line, bottom line, left line) -->
+  <path d="M 760 370 L 610 370 L 610 420 L 760 420" fill="none" stroke="#000000" stroke-width="1.2" />
+  <text x="685.0" y="399.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">Students Table</text>
+
+  <!-- Entity -> Process (Upper Flow) -->
+  <line x1="200" y1="380" x2="360" y2="380" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="230.0" y="368" width="100" height="11" fill="#ffffff" />
+  <text x="280.0" y="377" font-size="8" text-anchor="middle" fill="#000000">admission details</text>
+
+  <!-- Process -> Entity (Lower Flow) -->
+  <line x1="360" y1="410" x2="200" y2="410" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="245.0" y="412" width="70" height="11" fill="#ffffff" />
+  <text x="280.0" y="421" font-size="8" text-anchor="middle" fill="#000000">response</text>
+
+  <!-- Process -> Data Store (Upper Flow) -->
+  <line x1="505" y1="380" x2="610" y2="380" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="517.5" y="368" width="80" height="11" fill="#ffffff" />
+  <text x="557.5" y="377" font-size="8" text-anchor="middle" fill="#000000">insert student</text>
+
+  <!-- Data Store -> Process (Lower Flow) -->
+  <line x1="610" y1="410" x2="505" y2="410" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="532.5" y="412" width="50" height="11" fill="#ffffff" />
+  <text x="557.5" y="421" font-size="8" text-anchor="middle" fill="#000000">reply</text>
+
+  <!-- Row 3: Process 4.3 -->
+  <ellipse cx="432.5" cy="520.0" rx="72.5" ry="30.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="432.5" y="514" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">4.3</text>
+  <text x="432.5" y="528" font-size="10" text-anchor="middle" fill="#000000">Assign Class</text>
+
+  <!-- Row 3: Data Store (Open Right Box: top line, bottom line, left line) -->
+  <path d="M 760 495 L 610 495 L 610 545 L 760 545" fill="none" stroke="#000000" stroke-width="1.2" />
+  <text x="685.0" y="524.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">Class Table</text>
+
+  <!-- Entity -> Process (Upper Flow) -->
+  <line x1="200" y1="505" x2="360" y2="505" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="230.0" y="493" width="100" height="11" fill="#ffffff" />
+  <text x="280.0" y="502" font-size="8" text-anchor="middle" fill="#000000">class assign details</text>
+
+  <!-- Process -> Entity (Lower Flow) -->
+  <line x1="360" y1="535" x2="200" y2="535" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="245.0" y="537" width="70" height="11" fill="#ffffff" />
+  <text x="280.0" y="546" font-size="8" text-anchor="middle" fill="#000000">response</text>
+
+  <!-- Process -> Data Store (Upper Flow) -->
+  <line x1="505" y1="505" x2="610" y2="505" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="517.5" y="493" width="80" height="11" fill="#ffffff" />
+  <text x="557.5" y="502" font-size="8" text-anchor="middle" fill="#000000">update class</text>
+
+  <!-- Data Store -> Process (Lower Flow) -->
+  <line x1="610" y1="535" x2="505" y2="535" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="532.5" y="537" width="50" height="11" fill="#ffffff" />
+  <text x="557.5" y="546" font-size="8" text-anchor="middle" fill="#000000">reply</text>
+
+  <!-- Row 4: Process 4.4 -->
+  <ellipse cx="432.5" cy="645.0" rx="72.5" ry="30.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="432.5" y="639" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">4.4</text>
+  <text x="432.5" y="653" font-size="10" text-anchor="middle" fill="#000000">Search Students</text>
+
+  <!-- Row 4: Data Store (Open Right Box: top line, bottom line, left line) -->
+  <path d="M 760 620 L 610 620 L 610 670 L 760 670" fill="none" stroke="#000000" stroke-width="1.2" />
+  <text x="685.0" y="649.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">Students Table</text>
+
+  <!-- Entity -> Process (Upper Flow) -->
+  <line x1="200" y1="630" x2="360" y2="630" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="230.0" y="618" width="100" height="11" fill="#ffffff" />
+  <text x="280.0" y="627" font-size="8" text-anchor="middle" fill="#000000">search query</text>
+
+  <!-- Process -> Entity (Lower Flow) -->
+  <line x1="360" y1="660" x2="200" y2="660" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="245.0" y="662" width="70" height="11" fill="#ffffff" />
+  <text x="280.0" y="671" font-size="8" text-anchor="middle" fill="#000000">response</text>
+
+  <!-- Process -> Data Store (Upper Flow) -->
+  <line x1="505" y1="630" x2="610" y2="630" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="517.5" y="618" width="80" height="11" fill="#ffffff" />
+  <text x="557.5" y="627" font-size="8" text-anchor="middle" fill="#000000">fetch records</text>
+
+  <!-- Data Store -> Process (Lower Flow) -->
+  <line x1="610" y1="660" x2="505" y2="660" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="532.5" y="662" width="50" height="11" fill="#ffffff" />
+  <text x="557.5" y="671" font-size="8" text-anchor="middle" fill="#000000">reply</text>
+
+  <!-- Row 5: Process 4.5 -->
+  <ellipse cx="432.5" cy="770.0" rx="72.5" ry="30.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="432.5" y="764" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">4.5</text>
+  <text x="432.5" y="778" font-size="10" text-anchor="middle" fill="#000000">Manage Profile</text>
+
+  <!-- Row 5: Data Store (Open Right Box: top line, bottom line, left line) -->
+  <path d="M 760 745 L 610 745 L 610 795 L 760 795" fill="none" stroke="#000000" stroke-width="1.2" />
+  <text x="685.0" y="774.0" font-size="10" font-weight="bold" text-anchor="middle" fill="#000000">Registrar Table</text>
+
+  <!-- Entity -> Process (Upper Flow) -->
+  <line x1="200" y1="755" x2="360" y2="755" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="230.0" y="743" width="100" height="11" fill="#ffffff" />
+  <text x="280.0" y="752" font-size="8" text-anchor="middle" fill="#000000">profile update data</text>
+
+  <!-- Process -> Entity (Lower Flow) -->
+  <line x1="360" y1="785" x2="200" y2="785" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="245.0" y="787" width="70" height="11" fill="#ffffff" />
+  <text x="280.0" y="796" font-size="8" text-anchor="middle" fill="#000000">response</text>
+
+  <!-- Process -> Data Store (Upper Flow) -->
+  <line x1="505" y1="755" x2="610" y2="755" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="517.5" y="743" width="80" height="11" fill="#ffffff" />
+  <text x="557.5" y="752" font-size="8" text-anchor="middle" fill="#000000">update profile</text>
+
+  <!-- Data Store -> Process (Lower Flow) -->
+  <line x1="610" y1="785" x2="505" y2="785" stroke="#000000" stroke-width="1" marker-end="url(#arr)" />
+  <rect x="532.5" y="787" width="50" height="11" fill="#ffffff" />
+  <text x="557.5" y="796" font-size="8" text-anchor="middle" fill="#000000">reply</text>
+
+  <!-- Bottom Caption -->
+  <text x="450" y="1005" font-size="11" font-weight="bold" font-style="italic" text-anchor="middle" fill="#000000">Figure 6.4: Level 1 DFD of Registrar Module</text>
+
+  <!-- Bottom Divider Line -->
+  <line x1="65" y1="1030" x2="835" y2="1030" stroke="#000000" stroke-width="1.5" />
+
+  <!-- Bottom Page Number -->
+  <text x="450" y="1065" font-size="11" text-anchor="middle" fill="#000000">08</text>
+</svg>

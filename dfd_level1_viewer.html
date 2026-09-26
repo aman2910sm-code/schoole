@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DFD Level 1: School Management System</title>
+  <style>
+    :root {
+      --bg: #0F172A;
+      --card-bg: #1E293B;
+      --text: #F8FAFC;
+      --text-muted: #94A3B8;
+      --primary: #38BDF8;
+      --primary-hover: #0EA5E9;
+      --border: #334155;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      overflow: hidden;
+    }
+    header {
+      background: var(--card-bg);
+      border-bottom: 1px solid var(--border);
+      padding: 12px 24px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .header-left h1 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .header-left p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+    .tabs-group {
+      display: flex;
+      background: #0F172A;
+      padding: 4px;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      gap: 4px;
+    }
+    .tab-btn {
+      background: transparent;
+      border: none;
+      color: var(--text-muted);
+      padding: 6px 14px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 6px;
+      transition: all 0.2s;
+    }
+    .tab-btn.active {
+      background: #2563EB;
+      color: #FFFFFF;
+      box-shadow: 0 2px 6px rgba(37, 99, 235, 0.4);
+    }
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+    .btn {
+      background: var(--card-bg);
+      color: #F8FAFC;
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.85rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: all 0.15s;
+    }
+    .btn:hover {
+      background: #334155;
+      border-color: #64748B;
+    }
+    .btn-primary {
+      background: #2563EB;
+      border-color: #3B82F6;
+      color: #FFFFFF;
+    }
+    .btn-primary:hover {
+      background: #1D4ED8;
+    }
+    .viewport {
+      flex: 1;
+      position: relative;
+      overflow: hidden;
+      background: #E2E8F0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .diagram-container {
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 24px;
+    }
+    .diagram-container svg {
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.2);
+      border-radius: 8px;
+      background: #FFFFFF;
+      max-width: 1700px;
+      width: 100%;
+      height: auto;
+    }
+    .controls {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      padding: 6px;
+      display: flex;
+      gap: 6px;
+      z-index: 10;
+    }
+    .ctrl-btn {
+      background: #1E293B;
+      color: #FFFFFF;
+      border: 1px solid #334155;
+      width: 32px;
+      height: 32px;
+      border-radius: 6px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .ctrl-btn:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>School Management System &bull; DFD Level 1</h1>
+      <p>Modules: Admin, Teacher, Student, Registrar Office &bull; No UML Symbols &bull; Compliant with Specification</p>
+    </div>
+    <div class="tabs-group">
+      <button class="tab-btn active" onclick="switchTab('gane-sarson')">Gane &amp; Sarson Notation</button>
+      <button class="tab-btn" onclick="switchTab('yourdon')">Yourdon &amp; DeMarco Notation</button>
+    </div>
+    <div class="header-actions">
+      <a href="school_management_dfd_level1.drawio" download class="btn btn-primary" title="Download editable draw.io diagram file">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+        Download .drawio
+      </a>
+      <a href="https://app.diagrams.net/" target="_blank" class="btn" title="Open diagrams.net online editor">
+        Open in draw.io
+      </a>
+    </div>
+  </header>
+
+  <div class="viewport">
+    <div class="diagram-container" id="container-gs">
+      <iframe src="dfd_level1_gane_sarson.svg" style="width: 1700px; height: 1160px; border: none; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);"></iframe>
+    </div>
+    <div class="diagram-container" id="container-yd" style="display: none;">
+      <iframe src="dfd_level1_yourdon_demarco.svg" style="width: 1700px; height: 1160px; border: none; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.25);"></iframe>
+    </div>
+  </div>
+
+  <script>
+    function switchTab(notation) {
+      document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+      if (notation === 'gane-sarson') {
+        document.querySelectorAll('.tab-btn')[0].classList.add('active');
+        document.getElementById('container-gs').style.display = 'flex';
+        document.getElementById('container-yd').style.display = 'none';
+      } else {
+        document.querySelectorAll('.tab-btn')[1].classList.add('active');
+        document.getElementById('container-gs').style.display = 'none';
+        document.getElementById('container-yd').style.display = 'flex';
+      }
+    }
+  </script>
+</body>
+</html>

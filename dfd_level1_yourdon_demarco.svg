@@ -1,0 +1,320 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1700 1160" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Segoe UI', Arial, Helvetica, sans-serif;">
+  <defs>
+    <!-- Arrow Markers -->
+    <marker id="yd-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1E293B" />
+    </marker>
+    <marker id="yd-arrow-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#B45309" />
+    </marker>
+    <!-- Drop Shadow Filter -->
+    <filter id="yd-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12" flood-color="#000000" />
+    </filter>
+  </defs>
+
+  <!-- Title Banner -->
+  <rect x="60" y="20" width="1580" height="48" rx="8" fill="#1E293B" filter="url(#yd-shadow)"/>
+  <text x="850" y="42" fill="#FFFFFF" font-size="16" font-weight="bold" text-anchor="middle" dominant-baseline="middle">DATA FLOW DIAGRAM (DFD) LEVEL 1: SCHOOL MANAGEMENT SYSTEM</text>
+  <text x="850" y="58" fill="#FCD34D" font-size="12" text-anchor="middle" dominant-baseline="middle">Yourdon &amp; DeMarco Notation | Four Core Modules: Admin, Teacher, Student, Registrar Office</text>
+
+  <!-- ================= EXTERNAL ENTITIES (Yellowish Sharp Rectangles) ================= -->
+  <!-- Admin -->
+  <g filter="url(#yd-shadow)">
+    <rect x="60" y="140" width="160" height="90" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+    <text x="140" y="165" font-size="11" font-weight="bold" fill="#78350F" text-anchor="middle">EXTERNAL ENTITY</text>
+    <text x="140" y="190" font-size="18" font-weight="bold" fill="#0F172A" text-anchor="middle">Admin</text>
+    <text x="140" y="212" font-size="11" font-style="italic" fill="#475569" text-anchor="middle">(System Admin)</text>
+  </g>
+
+  <!-- Registrar Office -->
+  <g filter="url(#yd-shadow)">
+    <rect x="60" y="740" width="160" height="90" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+    <text x="140" y="765" font-size="11" font-weight="bold" fill="#78350F" text-anchor="middle">EXTERNAL ENTITY</text>
+    <text x="140" y="790" font-size="17" font-weight="bold" fill="#0F172A" text-anchor="middle">Registrar Office</text>
+    <text x="140" y="812" font-size="11" font-style="italic" fill="#475569" text-anchor="middle">(Admissions / Records)</text>
+  </g>
+
+  <!-- Teacher -->
+  <g filter="url(#yd-shadow)">
+    <rect x="1480" y="140" width="160" height="90" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+    <text x="1560" y="165" font-size="11" font-weight="bold" fill="#78350F" text-anchor="middle">EXTERNAL ENTITY</text>
+    <text x="1560" y="190" font-size="18" font-weight="bold" fill="#0F172A" text-anchor="middle">Teacher</text>
+    <text x="1560" y="212" font-size="11" font-style="italic" fill="#475569" text-anchor="middle">(Faculty Staff)</text>
+  </g>
+
+  <!-- Student -->
+  <g filter="url(#yd-shadow)">
+    <rect x="1480" y="740" width="160" height="90" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+    <text x="1560" y="765" font-size="11" font-weight="bold" fill="#78350F" text-anchor="middle">EXTERNAL ENTITY</text>
+    <text x="1560" y="790" font-size="18" font-weight="bold" fill="#0F172A" text-anchor="middle">Student</text>
+    <text x="1560" y="812" font-size="11" font-style="italic" fill="#475569" text-anchor="middle">(Learner / Enrollee)</text>
+  </g>
+
+
+  <!-- ================= PROCESSES (Yourdon DeMarco: Circle / Bubble) ================= -->
+  <!-- Process 1.0 Admin -->
+  <g filter="url(#yd-shadow)">
+    <circle cx="460" cy="185" r="60" fill="#FFF2CC" stroke="#D6B656" stroke-width="2.5"/>
+    <text x="460" y="165" font-size="16" font-weight="bold" fill="#78350F" text-anchor="middle">1.0</text>
+    <text x="460" y="185" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Admin</text>
+    <text x="460" y="202" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Management</text>
+  </g>
+
+  <!-- Process 4.0 Registrar -->
+  <g filter="url(#yd-shadow)">
+    <circle cx="460" cy="785" r="60" fill="#FFF2CC" stroke="#D6B656" stroke-width="2.5"/>
+    <text x="460" y="765" font-size="16" font-weight="bold" fill="#78350F" text-anchor="middle">4.0</text>
+    <text x="460" y="785" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Registrar</text>
+    <text x="460" y="802" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Office</text>
+  </g>
+
+  <!-- Process 2.0 Teacher -->
+  <g filter="url(#yd-shadow)">
+    <circle cx="1230" cy="185" r="60" fill="#FFF2CC" stroke="#D6B656" stroke-width="2.5"/>
+    <text x="1230" y="165" font-size="16" font-weight="bold" fill="#78350F" text-anchor="middle">2.0</text>
+    <text x="1230" y="185" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Teacher</text>
+    <text x="1230" y="202" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Operations</text>
+  </g>
+
+  <!-- Process 3.0 Student -->
+  <g filter="url(#yd-shadow)">
+    <circle cx="1230" cy="785" r="60" fill="#FFF2CC" stroke="#D6B656" stroke-width="2.5"/>
+    <text x="1230" y="765" font-size="16" font-weight="bold" fill="#78350F" text-anchor="middle">3.0</text>
+    <text x="1230" y="785" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Student</text>
+    <text x="1230" y="802" font-size="13" font-weight="bold" fill="#0F172A" text-anchor="middle">Portal</text>
+  </g>
+
+
+  <!-- ================= DATA STORES (Yourdon DeMarco: Open-Ended Box) ================= -->
+  <!-- D1 -->
+  <g>
+    <path d="M 975 80 L 725 80 L 725 126 L 975 126" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="726" y="81" width="248" height="44" fill="#FFF2CC"/>
+    <text x="740" y="100" font-size="12" font-weight="bold" fill="#78350F">D1 | Admin &amp; System Settings</text>
+    <text x="740" y="117" font-size="10" fill="#64748B">[admin, setting]</text>
+  </g>
+
+  <!-- D2 -->
+  <g>
+    <path d="M 975 215 L 725 215 L 725 261 L 975 261" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="726" y="216" width="248" height="44" fill="#FFF2CC"/>
+    <text x="740" y="235" font-size="12" font-weight="bold" fill="#78350F">D2 | Teacher Records</text>
+    <text x="740" y="252" font-size="10" fill="#64748B">[teacher]</text>
+  </g>
+
+  <!-- D7 -->
+  <g>
+    <path d="M 975 350 L 725 350 L 725 396 L 975 396" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="726" y="351" width="248" height="44" fill="#FFF2CC"/>
+    <text x="740" y="370" font-size="12" font-weight="bold" fill="#78350F">D7 | Registrar Staff Records</text>
+    <text x="740" y="387" font-size="10" fill="#64748B">[registrar_office]</text>
+  </g>
+
+  <!-- D4 -->
+  <g>
+    <path d="M 975 485 L 725 485 L 725 531 L 975 531" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="726" y="486" width="248" height="44" fill="#FFF2CC"/>
+    <text x="740" y="505" font-size="12" font-weight="bold" fill="#78350F">D4 | Academic Structure</text>
+    <text x="740" y="522" font-size="10" fill="#64748B">[grades, section, class, subjects]</text>
+  </g>
+
+  <!-- D3 -->
+  <g>
+    <path d="M 975 620 L 725 620 L 725 666 L 975 666" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="726" y="621" width="248" height="44" fill="#FFF2CC"/>
+    <text x="740" y="640" font-size="12" font-weight="bold" fill="#78350F">D3 | Student Records</text>
+    <text x="740" y="657" font-size="10" fill="#64748B">[student]</text>
+  </g>
+
+  <!-- D5 -->
+  <g>
+    <path d="M 975 755 L 725 755 L 725 801 L 975 801" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="726" y="756" width="248" height="44" fill="#FFF2CC"/>
+    <text x="740" y="775" font-size="12" font-weight="bold" fill="#78350F">D5 | Scores &amp; Results</text>
+    <text x="740" y="792" font-size="10" fill="#64748B">[student_score]</text>
+  </g>
+
+  <!-- D6 -->
+  <g>
+    <path d="M 975 890 L 725 890 L 725 936 L 975 936" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="726" y="891" width="248" height="44" fill="#FFF2CC"/>
+    <text x="740" y="910" font-size="12" font-weight="bold" fill="#78350F">D6 | Inquiries &amp; Messages</text>
+    <text x="740" y="927" font-size="10" fill="#64748B">[message]</text>
+  </g>
+
+
+  <!-- ================= DATA FLOWS ================= -->
+  <!-- Admin -> 1.0 -->
+  <g>
+    <path d="M 220 160 L 402 160" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="245" y="148" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="305" y="159" font-size="10" fill="#0F172A" text-anchor="middle">Admin Credentials</text>
+
+    <path d="M 220 185 L 400 185" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="245" y="173" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="305" y="184" font-size="10" fill="#0F172A" text-anchor="middle">Staff Setup &amp; Config</text>
+
+    <path d="M 402 210 L 220 210" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="245" y="202" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="305" y="213" font-size="10" fill="#0F172A" text-anchor="middle">Dashboard &amp; Reports</text>
+  </g>
+
+  <!-- 1.0 -> Data Stores -->
+  <g>
+    <path d="M 515 160 L 650 160 L 650 103 L 725 103" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" marker-start="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="605" y="118" width="105" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="657" y="129" font-size="10" fill="#78350F" text-anchor="middle">Update / Read Config</text>
+
+    <path d="M 520 185 L 670 185 L 670 238 L 725 238" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="615" y="210" width="100" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="665" y="221" font-size="10" fill="#78350F" text-anchor="middle">Create Teacher Acc.</text>
+
+    <path d="M 505 225 L 540 225 L 540 373 L 725 373" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="560" y="360" width="115" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="617" y="371" font-size="10" fill="#78350F" text-anchor="middle">Manage Registrar Staff</text>
+
+    <path d="M 460 245 L 460 499 L 725 499" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="485" y="488" width="145" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="557" y="499" font-size="10" fill="#78350F" text-anchor="middle">Configure Classes &amp; Grades</text>
+
+    <path d="M 725 913 L 320 913 L 320 320 L 420 320 L 420 238" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="330" y="308" width="115" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="387" y="319" font-size="10" fill="#78350F" text-anchor="middle">Read Inquiries / Msg</text>
+  </g>
+
+  <!-- Registrar -> 4.0 -->
+  <g>
+    <path d="M 220 760 L 402 760" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="245" y="748" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="305" y="759" font-size="10" fill="#0F172A" text-anchor="middle">Staff Credentials</text>
+
+    <path d="M 220 785 L 400 785" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="245" y="773" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="305" y="784" font-size="10" fill="#0F172A" text-anchor="middle">Student Admissions Data</text>
+
+    <path d="M 402 810 L 220 810" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="245" y="802" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="305" y="813" font-size="10" fill="#0F172A" text-anchor="middle">Enrollment Confirmations</text>
+  </g>
+
+  <!-- 4.0 -> Data Stores -->
+  <g>
+    <path d="M 725 385 L 560 385 L 560 740 L 505 740" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="565" y="420" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="625" y="431" font-size="10" fill="#78350F" text-anchor="middle">Verify Registrar Auth</text>
+
+    <path d="M 725 517 L 510 517 L 510 728" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="515" y="550" width="130" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="580" y="561" font-size="10" fill="#78350F" text-anchor="middle">Fetch Grade &amp; Section List</text>
+
+    <path d="M 515 760 L 660 760 L 660 643 L 725 643" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" marker-start="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="605" y="695" width="135" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="672" y="706" font-size="10" fill="#78350F" text-anchor="middle">Register / Query Student</text>
+  </g>
+
+  <!-- Teacher -> 2.0 -->
+  <g>
+    <path d="M 1480 160 L 1288 160" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="1335" y="148" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1395" y="159" font-size="10" fill="#0F172A" text-anchor="middle">Teacher Credentials</text>
+
+    <path d="M 1480 185 L 1290 185" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="1335" y="173" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1395" y="184" font-size="10" fill="#0F172A" text-anchor="middle">Student Marks &amp; Scores</text>
+
+    <path d="M 1288 210 L 1480 210" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="1335" y="202" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1395" y="213" font-size="10" fill="#0F172A" text-anchor="middle">Assigned Rosters / Lists</text>
+  </g>
+
+  <!-- 2.0 -> Data Stores -->
+  <g>
+    <path d="M 975 238 L 1050 238 L 1050 165 L 1172 165" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="1005" y="185" width="115" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1062" y="196" font-size="10" fill="#78350F" text-anchor="middle">Verify Teacher Auth</text>
+
+    <path d="M 975 499 L 1186 499 L 1186 240" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="1060" y="488" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1120" y="499" font-size="10" fill="#78350F" text-anchor="middle">Fetch Subject Details</text>
+
+    <path d="M 975 634 L 1252 634 L 1252 243" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="1135" y="623" width="125" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1197" y="634" font-size="10" fill="#78350F" text-anchor="middle">Fetch Class Student List</text>
+
+    <path d="M 1172 207 L 1025 207 L 1025 769 L 975 769" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" marker-start="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="990" y="325" width="140" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1060" y="336" font-size="10" fill="#78350F" text-anchor="middle">Save / Fetch Student Scores</text>
+  </g>
+
+  <!-- Student -> 3.0 -->
+  <g>
+    <path d="M 1480 760 L 1288 760" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="1335" y="748" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1395" y="759" font-size="10" fill="#0F172A" text-anchor="middle">Credentials &amp; Password</text>
+
+    <path d="M 1480 785 L 1290 785" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="1335" y="773" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1395" y="784" font-size="10" fill="#0F172A" text-anchor="middle">Inquiries &amp; Messages</text>
+
+    <path d="M 1288 810 L 1480 810" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="1335" y="802" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1395" y="813" font-size="10" fill="#0F172A" text-anchor="middle">Profile, Scores &amp; Grades</text>
+  </g>
+
+  <!-- 3.0 -> Data Stores -->
+  <g>
+    <path d="M 975 652 L 1060 652 L 1060 755 L 1172 755" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" marker-start="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="1000" y="695" width="145" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1072" y="706" font-size="10" fill="#78350F" text-anchor="middle">Verify Auth / Update Pwd</text>
+
+    <path d="M 975 517 L 1208 517 L 1208 728" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="1080" y="550" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1140" y="561" font-size="10" fill="#78350F" text-anchor="middle">Fetch Enrolled Courses</text>
+
+    <path d="M 975 787 L 1170 787" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="990" y="776" width="120" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1050" y="787" font-size="10" fill="#78350F" text-anchor="middle">Read Scores &amp; Grades</text>
+
+    <path d="M 1230 845 L 1230 913 L 975 913" stroke="#B45309" stroke-width="1.5" marker-end="url(#yd-arrow-blue)" fill="none"/>
+    <rect x="1070" y="902" width="130" height="15" fill="#FFFFFF" opacity="0.95"/>
+    <text x="1135" y="913" font-size="10" fill="#78350F" text-anchor="middle">Submit Feedback Inquiry</text>
+  </g>
+
+
+  <!-- ================= LEGEND ================= -->
+  <g>
+    <rect x="60" y="1000" width="1580" height="120" rx="10" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1.5"/>
+    <text x="80" y="1025" font-size="13" font-weight="bold" fill="#1E293B">YOURDON &amp; DEMARCO DFD NOTATION STANDARD (COMPLIANT WITH ATTACHED SPECIFICATION)</text>
+
+    <!-- Entity -->
+    <rect x="90" y="1045" width="110" height="48" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+    <text x="145" y="1074" font-size="12" font-weight="bold" fill="#78350F" text-anchor="middle">Entity</text>
+    <text x="215" y="1062" font-size="11" font-weight="bold" fill="#0F172A">External Entity</text>
+    <text x="215" y="1078" font-size="10" fill="#475569">Source/Sink of data (Admin, Teacher,</text>
+    <text x="215" y="1092" font-size="10" fill="#475569">Student, Registrar Office)</text>
+
+    <!-- Process -->
+    <circle cx="525" cy="1069" r="24" fill="#FFF2CC" stroke="#D6B656" stroke-width="2"/>
+    <text x="525" y="1073" font-size="10" font-weight="bold" fill="#78350F" text-anchor="middle">Process</text>
+    <text x="575" y="1062" font-size="11" font-weight="bold" fill="#0F172A">Process (Circle / Bubble)</text>
+    <text x="575" y="1078" font-size="10" fill="#475569">Numbered circle representing</text>
+    <text x="575" y="1092" font-size="10" fill="#475569">system functional transformations</text>
+
+    <!-- Data Store -->
+    <path d="M 960 1045 L 870 1045 L 870 1093 L 960 1093" stroke="#D6B656" stroke-width="2" fill="none"/>
+    <rect x="871" y="1046" width="88" height="46" fill="#FFF2CC"/>
+    <text x="880" y="1074" font-size="11" font-weight="bold" fill="#78350F">Data Store</text>
+    <text x="980" y="1062" font-size="11" font-weight="bold" fill="#0F172A">Data Store (Open-Ended Box)</text>
+    <text x="980" y="1078" font-size="10" fill="#475569">Two parallel lines with left cap</text>
+    <text x="980" y="1092" font-size="10" fill="#475569">Persistent database storage (D1-D7)</text>
+
+    <!-- Data Flow -->
+    <path d="M 1240 1070 L 1330 1070" stroke="#1E293B" stroke-width="1.5" marker-end="url(#yd-arrow)" fill="none"/>
+    <rect x="1255" y="1055" width="60" height="14" fill="#FFFFFF"/>
+    <text x="1285" y="1066" font-size="10" fill="#0F172A" text-anchor="middle">Data Flow</text>
+    <text x="1350" y="1062" font-size="11" font-weight="bold" fill="#0F172A">Data Flow (Directed Arrow)</text>
+    <text x="1350" y="1078" font-size="10" fill="#475569">Shows data payload &amp; direction</text>
+    <text x="1350" y="1092" font-size="10" fill="#475569">Labeled with noun phrases</text>
+  </g>
+</svg>

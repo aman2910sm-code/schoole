@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Segoe UI', Arial, Helvetica, sans-serif;">
+  <defs>
+    <filter id="ec-shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.12" flood-color="#000000" />
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <rect x="60" y="20" width="1680" height="50" rx="8" fill="#1E293B" filter="url(#ec-shadow)"/>
+  <text x="900" y="44" fill="#FFFFFF" font-size="17" font-weight="bold" text-anchor="middle" dominant-baseline="middle">REFERENCE E-COMMERCE ER DIAGRAM (BASED ON IMAGE EXAMPLES)</text>
+  <text x="900" y="60" fill="#FCD34D" font-size="12" text-anchor="middle" dominant-baseline="middle">Entities: User, Products, Orders, Cart | Relationships: Manages_Cart, Contains_Item, Places_Order, Includes_Item</text>
+
+  <!-- Lines: User -> Manages_Cart -> Cart -->
+  <line x1="410" y1="292" x2="520" y2="292" stroke="#B45309" stroke-width="2"/>
+  <line x1="650" y1="292" x2="800" y2="292" stroke="#B45309" stroke-width="2"/>
+  <rect x="430" y="280" width="20" height="18" fill="#FFFFFF"/>
+  <text x="440" y="293" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">1</text>
+  <rect x="760" y="280" width="20" height="18" fill="#FFFFFF"/>
+  <text x="770" y="293" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">1</text>
+
+  <!-- Lines: Cart -> Contains_Item -> Products -->
+  <line x1="960" y1="292" x2="1080" y2="292" stroke="#B45309" stroke-width="2"/>
+  <line x1="1210" y1="292" x2="1350" y2="292" stroke="#B45309" stroke-width="2"/>
+  <rect x="980" y="280" width="20" height="18" fill="#FFFFFF"/>
+  <text x="990" y="293" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">M</text>
+  <rect x="1310" y="280" width="20" height="18" fill="#FFFFFF"/>
+  <text x="1320" y="293" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">N</text>
+
+  <!-- Contains_Item attribute line: quantity -->
+  <line x1="1145" y1="265" x2="1145" y2="224" stroke="#B45309" stroke-width="1.5"/>
+
+  <!-- Lines: User -> Places_Order -> Orders -->
+  <path d="M 330 325 L 330 527 L 450 527" stroke="#B45309" stroke-width="2" fill="none"/>
+  <path d="M 580 527 L 880 527 L 880 650" stroke="#B45309" stroke-width="2" fill="none"/>
+  <rect x="340" y="420" width="20" height="18" fill="#FFFFFF"/>
+  <text x="350" y="433" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">1</text>
+  <rect x="860" y="615" width="20" height="18" fill="#FFFFFF"/>
+  <text x="870" y="628" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">N</text>
+
+  <!-- Lines: Orders -> Includes_Item -> Products -->
+  <path d="M 880 650 L 880 527 L 1190 527" stroke="#B45309" stroke-width="2" fill="none"/>
+  <path d="M 1320 527 L 1430 527 L 1430 325" stroke="#B45309" stroke-width="2" fill="none"/>
+  <rect x="1020" y="517" width="20" height="18" fill="#FFFFFF"/>
+  <text x="1030" y="530" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">M</text>
+  <rect x="1440" y="420" width="20" height="18" fill="#FFFFFF"/>
+  <text x="1450" y="433" font-size="13" font-weight="bold" fill="#B45309" text-anchor="middle">N</text>
+
+  <!-- User Attribute Lines -->
+  <line x1="250" y1="270" x2="185" y2="219" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="250" y1="285" x2="180" y2="277" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="250" y1="305" x2="180" y2="332" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="300" y1="260" x2="242" y2="195" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="360" y1="260" x2="352" y2="195" stroke="#64748B" stroke-width="1.2"/>
+
+  <!-- Cart Attribute Lines -->
+  <line x1="830" y1="260" x2="822" y2="205" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="910" y1="260" x2="932" y2="205" stroke="#64748B" stroke-width="1.2"/>
+
+  <!-- Products Attribute Lines -->
+  <line x1="1510" y1="270" x2="1560" y2="218" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="1510" y1="285" x2="1560" y2="267" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="1510" y1="300" x2="1560" y2="312" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="1510" y1="315" x2="1560" y2="357" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="1470" y1="260" x2="1487" y2="194" stroke="#64748B" stroke-width="1.2"/>
+
+  <!-- Orders Attribute Lines -->
+  <line x1="800" y1="682" x2="765" y2="683" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="830" y1="715" x2="762" y2="750" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="880" y1="715" x2="872" y2="750" stroke="#64748B" stroke-width="1.2"/>
+  <line x1="930" y1="715" x2="977" y2="750" stroke="#64748B" stroke-width="1.2"/>
+
+
+  <!-- Entities -->
+  <g filter="url(#ec-shadow)">
+    <rect x="250" y="260" width="160" height="65" fill="#DAE8FC" stroke="#4A7BB0" stroke-width="2.5"/>
+    <text x="330" y="298" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">USER</text>
+
+    <rect x="800" y="260" width="160" height="65" fill="#DAE8FC" stroke="#4A7BB0" stroke-width="2.5"/>
+    <text x="880" y="298" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">CART</text>
+
+    <rect x="1350" y="260" width="160" height="65" fill="#DAE8FC" stroke="#4A7BB0" stroke-width="2.5"/>
+    <text x="1430" y="298" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">PRODUCTS</text>
+
+    <rect x="800" y="650" width="160" height="65" fill="#DAE8FC" stroke="#4A7BB0" stroke-width="2.5"/>
+    <text x="880" y="688" font-size="15" font-weight="bold" fill="#0F172A" text-anchor="middle">ORDERS</text>
+  </g>
+
+  <!-- Relationships -->
+  <g filter="url(#ec-shadow)">
+    <polygon points="585,265 650,292 585,320 520,292" fill="#FFE6CC" stroke="#D79B00" stroke-width="2"/>
+    <text x="585" y="297" font-size="12" font-weight="bold" fill="#7C2D12" text-anchor="middle">Manages_Cart</text>
+
+    <polygon points="1145,265 1210,292 1145,320 1080,292" fill="#FFE6CC" stroke="#D79B00" stroke-width="2"/>
+    <text x="1145" y="297" font-size="12" font-weight="bold" fill="#7C2D12" text-anchor="middle">Contains_Item</text>
+
+    <polygon points="515,500 580,527 515,555 450,527" fill="#FFE6CC" stroke="#D79B00" stroke-width="2"/>
+    <text x="515" y="532" font-size="12" font-weight="bold" fill="#7C2D12" text-anchor="middle">Places_Order</text>
+
+    <polygon points="1255,500 1320,527 1255,555 1190,527" fill="#FFE6CC" stroke="#D79B00" stroke-width="2"/>
+    <text x="1255" y="532" font-size="12" font-weight="bold" fill="#7C2D12" text-anchor="middle">Includes_Item</text>
+  </g>
+
+  <!-- Attributes -->
+  <g>
+    <!-- User Attributes -->
+    <ellipse cx="137" cy="219" rx="47" ry="19" fill="#EFF6FF" stroke="#1E40AF" stroke-width="2"/>
+    <text x="137" y="224" font-size="12" font-weight="bold" fill="#1E3A8A" text-anchor="middle" text-decoration="underline">user_id</text>
+    <ellipse cx="140" cy="277" rx="40" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="140" y="281" font-size="11" fill="#334155" text-anchor="middle">name</text>
+    <ellipse cx="140" cy="332" rx="40" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="140" y="336" font-size="11" fill="#334155" text-anchor="middle">email</text>
+    <ellipse cx="242" cy="177" rx="42" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="242" y="181" font-size="11" fill="#334155" text-anchor="middle">password</text>
+    <ellipse cx="352" cy="177" rx="42" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="352" y="181" font-size="11" fill="#334155" text-anchor="middle">address</text>
+
+    <!-- Cart Attributes -->
+    <ellipse cx="822" cy="187" rx="42" ry="17" fill="#EFF6FF" stroke="#1E40AF" stroke-width="2"/>
+    <text x="822" y="192" font-size="11" font-weight="bold" fill="#1E3A8A" text-anchor="middle" text-decoration="underline">cart_id</text>
+    <ellipse cx="932" cy="187" rx="42" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="932" y="191" font-size="11" fill="#334155" text-anchor="middle">created_at</text>
+
+    <!-- Contains_Item Attribute: quantity -->
+    <ellipse cx="1145" cy="207" rx="40" ry="17" fill="#FEF3C7" stroke="#D97706" stroke-width="1.5"/>
+    <text x="1145" y="211" font-size="11" fill="#92400E" text-anchor="middle">quantity</text>
+
+    <!-- Products Attributes -->
+    <ellipse cx="1607" cy="218" rx="47" ry="18" fill="#EFF6FF" stroke="#1E40AF" stroke-width="2"/>
+    <text x="1607" y="223" font-size="11" font-weight="bold" fill="#1E3A8A" text-anchor="middle" text-decoration="underline">product_id</text>
+    <ellipse cx="1600" cy="267" rx="40" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="1600" y="271" font-size="11" fill="#334155" text-anchor="middle">name</text>
+    <ellipse cx="1600" cy="312" rx="40" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="1600" y="316" font-size="11" fill="#334155" text-anchor="middle">price</text>
+    <ellipse cx="1602" cy="357" rx="42" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="1602" y="361" font-size="11" fill="#334155" text-anchor="middle">description</text>
+    <ellipse cx="1487" cy="177" rx="37" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="1487" y="181" font-size="11" fill="#334155" text-anchor="middle">stock</text>
+
+    <!-- Orders Attributes -->
+    <ellipse cx="717" cy="683" rx="47" ry="18" fill="#EFF6FF" stroke="#1E40AF" stroke-width="2"/>
+    <text x="717" y="688" font-size="11" font-weight="bold" fill="#1E3A8A" text-anchor="middle" text-decoration="underline">order_id</text>
+    <ellipse cx="762" cy="767" rx="42" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="762" y="771" font-size="11" fill="#334155" text-anchor="middle">order_date</text>
+    <ellipse cx="872" cy="767" rx="47" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="872" y="771" font-size="10" fill="#334155" text-anchor="middle">total_amount</text>
+    <ellipse cx="977" cy="767" rx="37" ry="17" fill="#F8FAFC" stroke="#64748B" stroke-width="1.5"/>
+    <text x="977" y="771" font-size="11" fill="#334155" text-anchor="middle">status</text>
+  </g>
+</svg>
