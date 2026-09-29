@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="admin-teacher-er" name="Combined ER Diagram: Admin &amp; Teacher Modules (sms_db)">
-        <mxGraphModel dx="1643" dy="1420" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1550" pageHeight="1450" background="#FFFFFF" math="0" shadow="0">
+        <mxGraphModel dx="1960" dy="1033" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1550" pageHeight="1450" background="#FFFFFF" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -8,31 +8,31 @@
                     <mxGeometry x="380" y="300" width="140" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_admin_0" value="&lt;u&gt;admin_id&lt;/u&gt;&lt;br/&gt;&lt;b&gt;(PK)&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="370" y="210" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="400" y="190" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_admin_0" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_admin" target="attr_admin_0" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_admin_1" value="username" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="530" y="210" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="555" y="290" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_admin_1" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_admin" target="attr_admin_1" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_admin_2" value="password" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="300" y="430" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="400" y="430" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_admin_2" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_admin" target="attr_admin_2" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_admin_3" value="fname" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="372" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="240" y="376" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_admin_3" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_admin" target="attr_admin_3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_admin_4" value="lname" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="225" y="258" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="240" y="248" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_admin_4" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_admin" target="attr_admin_4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -148,13 +148,13 @@
                     <mxGeometry x="950" y="800" width="160" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_teacher_0" value="&lt;u&gt;teacher_id&lt;/u&gt;&lt;br/&gt;&lt;b&gt;(PK)&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="810" y="665" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="775" y="665" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_teacher_0" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_teacher" target="attr_teacher_0" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_teacher_1" value="username" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="920" y="665" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="907.5" y="665" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_teacher_1" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_teacher" target="attr_teacher_1" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -172,7 +172,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_teacher_4" value="fname" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="1250" y="665" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="1270" y="707" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_teacher_4" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_teacher" target="attr_teacher_4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -196,7 +196,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_teacher_8" value="address" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="740" y="958" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="690" y="958" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_teacher_8" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_teacher" target="attr_teacher_8" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -220,7 +220,7 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="attr_teacher_12" value="qualification" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="1270" y="980" width="105" height="42" as="geometry"/>
+                    <mxGeometry x="1270" y="963" width="105" height="42" as="geometry"/>
                 </mxCell>
                 <mxCell id="edge_teacher_12" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_teacher" target="attr_teacher_12" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
@@ -246,11 +246,10 @@
                 <mxCell id="ent_subjects" value="&lt;b&gt;subjects&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.8;fontColor=#000000;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" parent="1" vertex="1">
                     <mxGeometry x="890" y="1190" width="140" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="attr_subjects_0" value="&lt;u&gt;subject_id&lt;/u&gt;&lt;br/&gt;&lt;b&gt;(PK)&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="795" y="1110" width="105" height="42" as="geometry"/>
-                </mxCell>
-                <mxCell id="edge_subjects_0" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_subjects" target="attr_subjects_0" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="edge_subjects_0" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_subjects" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="871.4366508459798" y="1149.6902616194639" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
                 <mxCell id="attr_subjects_1" value="subject" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" parent="1" vertex="1">
                     <mxGeometry x="1090" y="1115" width="105" height="42" as="geometry"/>
@@ -270,42 +269,6 @@
                 <mxCell id="edge_subjects_3" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1;" parent="1" source="ent_subjects" target="attr_subjects_3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="rel_0" value="&lt;b&gt;configures&lt;/b&gt;" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="380" y="550" width="110" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_1_0" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" parent="1" source="ent_admin" target="rel_0" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_2_0" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" parent="1" source="ent_setting" target="rel_0" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_1" value="&lt;b&gt;reviews&lt;/b&gt;" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="380" y="1000" width="100" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_1_1" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" parent="1" source="ent_setting" target="rel_1" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_2_1" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" parent="1" source="ent_message" target="rel_1" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_2" value="&lt;b&gt;manages&lt;/b&gt;" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="635" y="610" width="100" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_1_2" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;entryX=0.362;entryY=0.146;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ent_admin" target="rel_2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_2_2" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;entryX=0.736;entryY=0.783;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ent_teacher" target="rel_2" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_3" value="&lt;b&gt;defines&lt;/b&gt;" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" parent="1" vertex="1">
-                    <mxGeometry x="665" y="300" width="100" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_1_3" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" parent="1" source="ent_admin" target="rel_3" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="rel_edge_2_3" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;" parent="1" source="ent_courses" target="rel_3" edge="1">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
                 <mxCell id="rel_4" value="&lt;b&gt;teaches&lt;/b&gt;" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontColor=#000000;fontSize=11;align=center;verticalAlign=middle;" parent="1" vertex="1">
                     <mxGeometry x="970" y="1055" width="100" height="60" as="geometry"/>
                 </mxCell>
@@ -314,6 +277,12 @@
                 </mxCell>
                 <mxCell id="rel_edge_2_4" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#000000;strokeWidth=1.5;entryX=0.41;entryY=0.888;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="ent_subjects" target="rel_4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" value="&lt;u&gt;subject_id&lt;/u&gt;&lt;br/&gt;&lt;b&gt;(PK)&lt;/b&gt;" style="ellipse;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.2;fontColor=#000000;fontSize=10;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="795" y="1110" width="105" height="42" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="&lt;b&gt;student_score&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.8;fontColor=#000000;fontSize=13;fontStyle=1;align=center;verticalAlign=middle;" vertex="1" parent="1">
+                    <mxGeometry x="1300" y="1165" width="160" height="65" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>

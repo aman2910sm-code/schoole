@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mxfile host="app.diagrams.net" modified="2026-09-29T15:45:00.000Z" agent="Mozilla/5.0" version="21.0.0" type="device">
+  <diagram id="sms-part1-academic-hierarchy" name="School Management System - Academic Hierarchy (Part 1)">
+    <mxGraphModel dx="1400" dy="780" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1400" pageHeight="780" background="#FFFFFF" math="0" shadow="0">
+      <root>
+        <mxCell id="0"/>
+        <mxCell id="1" parent="0"/>
+        <mxCell id="title_banner" value="&lt;div style=&quot;font-size: 18px; font-weight: bold; letter-spacing: 0.8px; margin-bottom: 4px;&quot;&gt;SCHOOL MANAGEMENT SYSTEM (&lt;span style=&quot;color: #0369a1;&quot;&gt;sms_db&lt;/span&gt;) — ER DIAGRAM (PART 1)&lt;/div&gt;&lt;div style=&quot;font-size: 12px; color: #475569; font-weight: normal;&quot;&gt;&lt;b&gt;Module 1: Academic Hierarchy &amp;amp; Classroom Organization&lt;/b&gt; &amp;nbsp;|&amp;nbsp; Primary Source of Truth: &lt;b&gt;DATA_DICTIONARY.md&lt;/b&gt; &amp;nbsp;|&amp;nbsp; Strict Foreign Key Referential Integrity&lt;/div&gt;" style="shape=rectangle;rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#334155;strokeWidth=1.8;align=center;verticalAlign=middle;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="70" y="30" width="1260" height="65" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_grades" value="&lt;div style=&quot;text-align: center; font-weight: bold; font-size: 15px; letter-spacing: 0.5px; padding-bottom: 6px; border-bottom: 2px solid #0F172A; margin-bottom: 8px;&quot;&gt;grades&lt;/div&gt;&lt;div style=&quot;font-size: 12px; line-height: 1.8; font-family: Consolas, 'Courier New', Courier, monospace;&quot;&gt;&lt;div&gt;&lt;u&gt;&lt;b&gt;grade_id&lt;/b&gt;&lt;/u&gt; &lt;span style=&quot;color: #0369a1; font-weight: bold;&quot;&gt;(PK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;grade&lt;/div&gt;&lt;div&gt;grade_code&lt;/div&gt;&lt;/div&gt;" style="shape=rectangle;rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F172A;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=14;spacingRight=14;spacingTop=10;spacingBottom=10;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="120" y="240" width="220" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_class" value="&lt;div style=&quot;text-align: center; font-weight: bold; font-size: 15px; letter-spacing: 0.5px; padding-bottom: 6px; border-bottom: 2px solid #0F172A; margin-bottom: 8px;&quot;&gt;class&lt;/div&gt;&lt;div style=&quot;font-size: 12px; line-height: 1.8; font-family: Consolas, 'Courier New', Courier, monospace;&quot;&gt;&lt;div&gt;&lt;u&gt;&lt;b&gt;class_id&lt;/b&gt;&lt;/u&gt; &lt;span style=&quot;color: #0369a1; font-weight: bold;&quot;&gt;(PK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;grade&lt;/b&gt; &lt;span style=&quot;color: #b91c1c; font-weight: bold;&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;section&lt;/b&gt; &lt;span style=&quot;color: #b91c1c; font-weight: bold;&quot;&gt;(FK)&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=rectangle;rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F172A;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=14;spacingRight=14;spacingTop=10;spacingBottom=10;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="590" y="240" width="220" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="ent_section" value="&lt;div style=&quot;text-align: center; font-weight: bold; font-size: 15px; letter-spacing: 0.5px; padding-bottom: 6px; border-bottom: 2px solid #0F172A; margin-bottom: 8px;&quot;&gt;section&lt;/div&gt;&lt;div style=&quot;font-size: 12px; line-height: 1.8; font-family: Consolas, 'Courier New', Courier, monospace;&quot;&gt;&lt;div&gt;&lt;u&gt;&lt;b&gt;section_id&lt;/b&gt;&lt;/u&gt; &lt;span style=&quot;color: #0369a1; font-weight: bold;&quot;&gt;(PK)&lt;/span&gt;&lt;/div&gt;&lt;div&gt;section&lt;/div&gt;&lt;/div&gt;" style="shape=rectangle;rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F172A;strokeWidth=2;align=left;verticalAlign=top;spacingLeft=14;spacingRight=14;spacingTop=10;spacingBottom=10;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="1060" y="240" width="220" height="140" as="geometry"/>
+        </mxCell>
+        <mxCell id="rel_comprises" value="&lt;b&gt;comprises&lt;/b&gt;" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F172A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=13;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="390" y="270" width="145" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="rel_divides" value="&lt;b&gt;divides&lt;/b&gt;" style="shape=rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#0F172A;strokeWidth=2;align=center;verticalAlign=middle;fontFamily=Helvetica;fontStyle=1;fontSize=13;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="865" y="270" width="145" height="80" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge_rel1" value="1 : N Relationship" style="shape=rectangle;rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#CBD5E1;strokeWidth=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=10;fontColor=#334155;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="412" y="238" width="100" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="badge_rel2" value="1 : N Relationship" style="shape=rectangle;rounded=1;arcSize=20;whiteSpace=wrap;html=1;fillColor=#F1F5F9;strokeColor=#CBD5E1;strokeWidth=1;align=center;verticalAlign=middle;fontFamily=Helvetica;fontSize=10;fontColor=#334155;fontStyle=1;" parent="1" vertex="1">
+          <mxGeometry x="888" y="238" width="100" height="22" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_grades_comprises" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#0F172A;strokeWidth=2;" parent="1" source="ent_grades" target="rel_comprises" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_comprises_class" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#0F172A;strokeWidth=2;" parent="1" source="rel_comprises" target="ent_class" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_section_divides" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#0F172A;strokeWidth=2;" parent="1" source="ent_section" target="rel_divides" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="edge_divides_class" value="" style="edgeStyle=none;rounded=0;html=1;endArrow=none;strokeColor=#0F172A;strokeWidth=2;" parent="1" source="rel_divides" target="ent_class" edge="1">
+          <mxGeometry relative="1" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_grades" value="1" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="350" y="280" width="30" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_class_left" value="N" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="550" y="280" width="30" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_class_right" value="N" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="825" y="280" width="30" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="card_section" value="1" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=14;fontStyle=1;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="1020" y="280" width="30" height="25" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_grades" value="(Parent Grade)" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#64748B;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="325" y="315" width="80" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_class_left" value="(Cohort)" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#64748B;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="540" y="315" width="55" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_class_right" value="(Cohort)" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#64748B;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="810" y="315" width="55" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="role_section" value="(Parent Section)" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;fontColor=#64748B;fontFamily=Helvetica;" parent="1" vertex="1">
+          <mxGeometry x="1000" y="315" width="85" height="20" as="geometry"/>
+        </mxCell>
+        <mxCell id="panel_fk_matrix" value="&lt;div style=&quot;font-weight: bold; font-size: 13px; color: #0F172A; border-bottom: 1.5px solid #CBD5E1; padding-bottom: 5px; margin-bottom: 8px;&quot;&gt;VERIFIED REFERENTIAL INTEGRITY (PK → FK CONSTRAINTS)&lt;/div&gt;&lt;table style=&quot;width: 100%; font-size: 11px; line-height: 1.6; border-collapse: collapse; color: #334155;&quot;&gt;&lt;tr style=&quot;background: #F1F5F9;&quot;&gt;&lt;th style=&quot;text-align: left; padding: 4px;&quot;&gt;Child Table &amp;amp; FK&lt;/th&gt;&lt;th style=&quot;text-align: left; padding: 4px;&quot;&gt;Referenced Parent &amp;amp; PK&lt;/th&gt;&lt;th style=&quot;text-align: center; padding: 4px;&quot;&gt;Cardinality&lt;/th&gt;&lt;th style=&quot;text-align: left; padding: 4px;&quot;&gt;Cascade Rule&lt;/th&gt;&lt;/tr&gt;&lt;tr style=&quot;border-bottom: 1px solid #E2E8F0;&quot;&gt;&lt;td style=&quot;padding: 5px;&quot;&gt;&lt;b&gt;class&lt;/b&gt;.&lt;span style=&quot;color: #b91c1c;&quot;&gt;grade&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px;&quot;&gt;&lt;b&gt;grades&lt;/b&gt;.&lt;span style=&quot;color: #0369a1;&quot;&gt;grade_id&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center; font-weight: bold;&quot;&gt;1 : N&lt;/td&gt;&lt;td style=&quot;padding: 5px;&quot;&gt;ON UPDATE CASCADE&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding: 5px;&quot;&gt;&lt;b&gt;class&lt;/b&gt;.&lt;span style=&quot;color: #b91c1c;&quot;&gt;section&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;padding: 5px;&quot;&gt;&lt;b&gt;section&lt;/b&gt;.&lt;span style=&quot;color: #0369a1;&quot;&gt;section_id&lt;/span&gt;&lt;/td&gt;&lt;td style=&quot;text-align: center; font-weight: bold;&quot;&gt;1 : N&lt;/td&gt;&lt;td style=&quot;padding: 5px;&quot;&gt;ON UPDATE CASCADE&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div style=&quot;margin-top: 8px; font-size: 10.5px; color: #64748B;&quot;&gt;&lt;b&gt;Business Semantics:&lt;/b&gt; An instructional classroom cohort (&lt;code&gt;class&lt;/code&gt;) is an associative pairing linking a grade standard (&lt;code&gt;grades&lt;/code&gt;) with a physical division (&lt;code&gt;section&lt;/code&gt;).&lt;/div&gt;" style="shape=rectangle;rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#CBD5E1;strokeWidth=1.5;align=left;verticalAlign=top;spacingLeft=14;spacingRight=14;spacingTop=10;spacingBottom=10;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="120" y="440" width="600" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="panel_legend" value="&lt;div style=&quot;font-weight: bold; font-size: 13px; color: #0F172A; border-bottom: 1.5px solid #CBD5E1; padding-bottom: 5px; margin-bottom: 8px;&quot;&gt;ER NOTATION LEGEND &amp;amp; EXTENSIBILITY (PART 1 FOUNDATION)&lt;/div&gt;&lt;table style=&quot;width: 100%; font-size: 11px; line-height: 1.6; border-collapse: collapse; color: #334155;&quot;&gt;&lt;tr&gt;&lt;td style=&quot;width: 140px; padding: 4px;&quot;&gt;&lt;b&gt;Rectangle&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;Entity Table containing exact columns from &lt;i&gt;DATA_DICTIONARY.md&lt;/i&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: #0369a1;&quot;&gt;(PK)&lt;/span&gt;&lt;/b&gt; Underlined&lt;/td&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;Primary Key column (Unique, Auto-increment, Not Null)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;&lt;b&gt;&lt;span style=&quot;color: #b91c1c;&quot;&gt;(FK)&lt;/span&gt;&lt;/b&gt; Bold Tag&lt;/td&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;Foreign Key column maintaining InnoDB relational integrity&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;&lt;b&gt;Rhombus / Diamond&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;Semantic relationship connector between parent and child tables&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;&lt;b&gt;Cardinality 1 : N&lt;/b&gt;&lt;/td&gt;&lt;td style=&quot;padding: 4px;&quot;&gt;One parent record maps to multiple child records (Zero crossing lines)&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div style=&quot;margin-top: 8px; font-size: 10.5px; color: #64748B;&quot;&gt;&lt;b&gt;Part 2 Extension Points:&lt;/b&gt; &lt;code&gt;grades&lt;/code&gt; will connect to &lt;code&gt;subjects&lt;/code&gt; &amp;amp; &lt;code&gt;student&lt;/code&gt;; &lt;code&gt;section&lt;/code&gt; will connect to &lt;code&gt;student&lt;/code&gt;.&lt;/div&gt;" style="shape=rectangle;rounded=1;arcSize=4;whiteSpace=wrap;html=1;fillColor=#F8FAFC;strokeColor=#CBD5E1;strokeWidth=1.5;align=left;verticalAlign=top;spacingLeft=14;spacingRight=14;spacingTop=10;spacingBottom=10;fontFamily=Helvetica;fontColor=#0F172A;" parent="1" vertex="1">
+          <mxGeometry x="760" y="440" width="520" height="180" as="geometry"/>
+        </mxCell>
+        <mxCell id="footer_note" value="&lt;div style=&quot;text-align: center; font-size: 11px; color: #64748B;&quot;&gt;School Management System Database (&lt;code&gt;sms_db&lt;/code&gt;) | Editable Draw.io Diagram File | Generated for diagrams.net&lt;/div&gt;" style="shape=text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;" parent="1" vertex="1">
+          <mxGeometry x="70" y="645" width="1260" height="25" as="geometry"/>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

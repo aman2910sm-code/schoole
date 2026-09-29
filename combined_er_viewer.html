@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Combined ER Diagrams: Admin-Teacher &amp; Student-Registrar | School Management System</title>
+  <title>Combined ER Diagrams: Admin-Registrar &amp; Student-Teacher | School Management System</title>
   <style>
     body {
       margin: 0;
@@ -77,7 +77,7 @@
     main {
       padding: 30px 10px;
       width: 100%;
-      max-width: 1580px;
+      max-width: 1650px;
       display: flex;
       justify-content: center;
     }
@@ -111,22 +111,22 @@
     </div>
 
     <div class="nav-tabs">
-      <button class="nav-btn active" onclick="showTab('admin_teacher')">1. Admin &amp; Teacher ER</button>
-      <button class="nav-btn" onclick="showTab('student_registrar')">2. Student &amp; Registrar ER</button>
+      <button class="nav-btn active" onclick="showTab('admin_registrar')">1. Admin &amp; Registrar ER</button>
+      <button class="nav-btn" onclick="showTab('student_teacher')">2. Student &amp; Teacher ER</button>
     </div>
 
     <div class="actions">
-      <a id="download-drawio" href="admin_teacher.drawio" download>Download .drawio</a>
+      <a id="download-drawio" href="admin_registrar.drawio" download>Download .drawio</a>
     </div>
   </header>
 
   <main>
     <div class="sheet-card">
-      <div id="tab-admin_teacher" class="panel active">
-        <object data="admin_teacher_er.svg" type="image/svg+xml"></object>
+      <div id="tab-admin_registrar" class="panel active">
+        <object data="admin_registrar_er.svg" type="image/svg+xml"></object>
       </div>
-      <div id="tab-student_registrar" class="panel">
-        <object data="student_registrar_er.svg" type="image/svg+xml"></object>
+      <div id="tab-student_teacher" class="panel">
+        <object data="student_teacher_er.svg" type="image/svg+xml"></object>
       </div>
     </div>
   </main>

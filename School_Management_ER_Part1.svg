@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 750" width="1400" height="750" style="background:#FFFFFF; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;">
+  <defs>
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="115%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.06"/>
+    </filter>
+  </defs>
+
+  <!-- TITLE BANNER -->
+  <g transform="translate(70, 30)">
+    <rect width="1260" height="68" rx="6" fill="#F8FAFC" stroke="#334155" stroke-width="1.8" filter="url(#shadow)"/>
+    <text x="630" y="32" text-anchor="middle" font-size="18" font-weight="bold" fill="#0F172A">
+      SCHOOL MANAGEMENT SYSTEM (<tspan fill="#0284C7">sms_db</tspan>) — ER DIAGRAM (PART 1)
+    </text>
+    <text x="630" y="52" text-anchor="middle" font-size="12" fill="#475569">
+      <tspan font-weight="bold">Module 1: Academic Hierarchy &amp; Classroom Organization</tspan> | Primary Source of Truth: <tspan font-weight="bold">DATA_DICTIONARY.md</tspan> | Strict Foreign Key Referential Integrity
+    </text>
+  </g>
+
+  <!-- CONNECTING RELATIONSHIP LINES -->
+  <!-- Line 1: grades to comprises -->
+  <line x1="340" y1="310" x2="390" y2="310" stroke="#0F172A" stroke-width="2.2"/>
+  <!-- Line 2: comprises to class -->
+  <line x1="535" y1="310" x2="590" y2="310" stroke="#0F172A" stroke-width="2.2"/>
+  <!-- Line 3: class to divides -->
+  <line x1="810" y1="310" x2="865" y2="310" stroke="#0F172A" stroke-width="2.2"/>
+  <!-- Line 4: divides to section -->
+  <line x1="1010" y1="310" x2="1060" y2="310" stroke="#0F172A" stroke-width="2.2"/>
+
+  <!-- CARDINALITY & ROLES ON LINES -->
+  <!-- grades side -->
+  <text x="365" y="300" text-anchor="middle" font-size="16" font-weight="bold" fill="#0F172A">1</text>
+  <text x="365" y="330" text-anchor="middle" font-size="10" fill="#64748B">(Grade)</text>
+
+  <!-- class left side -->
+  <text x="562" y="300" text-anchor="middle" font-size="16" font-weight="bold" fill="#0F172A">N</text>
+  <text x="562" y="330" text-anchor="middle" font-size="10" fill="#64748B">(Cohort)</text>
+
+  <!-- class right side -->
+  <text x="838" y="300" text-anchor="middle" font-size="16" font-weight="bold" fill="#0F172A">N</text>
+  <text x="838" y="330" text-anchor="middle" font-size="10" fill="#64748B">(Cohort)</text>
+
+  <!-- section side -->
+  <text x="1035" y="300" text-anchor="middle" font-size="16" font-weight="bold" fill="#0F172A">1</text>
+  <text x="1035" y="330" text-anchor="middle" font-size="10" fill="#64748B">(Section)</text>
+
+  <!-- RELATIONSHIP BADGES (ABOVE DIAMONDS) -->
+  <rect x="412.5" y="238" width="100" height="22" rx="11" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="462.5" y="253" text-anchor="middle" font-size="10" font-weight="bold" fill="#334155">1 : N Relationship</text>
+
+  <rect x="887.5" y="238" width="100" height="22" rx="11" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="1"/>
+  <text x="937.5" y="253" text-anchor="middle" font-size="10" font-weight="bold" fill="#334155">1 : N Relationship</text>
+
+  <!-- RELATIONSHIP DIAMONDS -->
+  <!-- comprises diamond -->
+  <g transform="translate(390, 270)">
+    <polygon points="72.5,0 145,40 72.5,80 0,40" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.2" filter="url(#shadow)"/>
+    <text x="72.5" y="45" text-anchor="middle" font-size="13" font-weight="bold" fill="#0F172A">comprises</text>
+  </g>
+
+  <!-- divides diamond -->
+  <g transform="translate(865, 270)">
+    <polygon points="72.5,0 145,40 72.5,80 0,40" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.2" filter="url(#shadow)"/>
+    <text x="72.5" y="45" text-anchor="middle" font-size="13" font-weight="bold" fill="#0F172A">divides</text>
+  </g>
+
+  <!-- ENTITY 1: grades -->
+  <g transform="translate(120, 240)">
+    <rect width="220" height="140" rx="4" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.2" filter="url(#shadow)"/>
+    <rect width="220" height="34" rx="4" fill="#F8FAFC" stroke="#0F172A" stroke-width="2.2"/>
+    <line x1="0" y1="34" x2="220" y2="34" stroke="#0F172A" stroke-width="2"/>
+    <text x="110" y="23" text-anchor="middle" font-size="14" font-weight="bold" fill="#0F172A">grades</text>
+
+    <!-- Attributes -->
+    <text x="18" y="60" font-size="12" font-family="Consolas, monospace" fill="#0F172A">
+      <tspan font-weight="bold" text-decoration="underline">grade_id</tspan> <tspan fill="#0284C7" font-weight="bold">(PK)</tspan>
+    </text>
+    <text x="18" y="85" font-size="12" font-family="Consolas, monospace" fill="#334155">grade</text>
+    <text x="18" y="110" font-size="12" font-family="Consolas, monospace" fill="#334155">grade_code</text>
+  </g>
+
+  <!-- ENTITY 2: class (Associative / Junction Entity) -->
+  <g transform="translate(590, 240)">
+    <rect width="220" height="140" rx="4" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.2" filter="url(#shadow)"/>
+    <rect width="220" height="34" rx="4" fill="#F8FAFC" stroke="#0F172A" stroke-width="2.2"/>
+    <line x1="0" y1="34" x2="220" y2="34" stroke="#0F172A" stroke-width="2"/>
+    <text x="110" y="23" text-anchor="middle" font-size="14" font-weight="bold" fill="#0F172A">class</text>
+
+    <!-- Attributes -->
+    <text x="18" y="60" font-size="12" font-family="Consolas, monospace" fill="#0F172A">
+      <tspan font-weight="bold" text-decoration="underline">class_id</tspan> <tspan fill="#0284C7" font-weight="bold">(PK)</tspan>
+    </text>
+    <text x="18" y="85" font-size="12" font-family="Consolas, monospace" fill="#0F172A">
+      <tspan font-weight="bold">grade</tspan> <tspan fill="#B91C1C" font-weight="bold">(FK)</tspan>
+    </text>
+    <text x="18" y="110" font-size="12" font-family="Consolas, monospace" fill="#0F172A">
+      <tspan font-weight="bold">section</tspan> <tspan fill="#B91C1C" font-weight="bold">(FK)</tspan>
+    </text>
+  </g>
+
+  <!-- ENTITY 3: section -->
+  <g transform="translate(1060, 240)">
+    <rect width="220" height="140" rx="4" fill="#FFFFFF" stroke="#0F172A" stroke-width="2.2" filter="url(#shadow)"/>
+    <rect width="220" height="34" rx="4" fill="#F8FAFC" stroke="#0F172A" stroke-width="2.2"/>
+    <line x1="0" y1="34" x2="220" y2="34" stroke="#0F172A" stroke-width="2"/>
+    <text x="110" y="23" text-anchor="middle" font-size="14" font-weight="bold" fill="#0F172A">section</text>
+
+    <!-- Attributes -->
+    <text x="18" y="60" font-size="12" font-family="Consolas, monospace" fill="#0F172A">
+      <tspan font-weight="bold" text-decoration="underline">section_id</tspan> <tspan fill="#0284C7" font-weight="bold">(PK)</tspan>
+    </text>
+    <text x="18" y="85" font-size="12" font-family="Consolas, monospace" fill="#334155">section</text>
+  </g>
+
+  <!-- LOWER PANELS: REFERENTIAL INTEGRITY & ER NOTATION LEGEND -->
+  <!-- Panel 1: FK Matrix -->
+  <g transform="translate(120, 440)">
+    <rect width="600" height="180" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="20" y="28" font-size="13" font-weight="bold" fill="#0F172A">VERIFIED REFERENTIAL INTEGRITY (PK → FK CONSTRAINTS)</text>
+    <line x1="20" y1="36" x2="580" y2="36" stroke="#CBD5E1" stroke-width="1"/>
+
+    <!-- Table header -->
+    <rect x="20" y="46" width="560" height="24" fill="#F1F5F9" rx="3"/>
+    <text x="30" y="62" font-size="11" font-weight="bold" fill="#334155">Child Table &amp; FK</text>
+    <text x="180" y="62" font-size="11" font-weight="bold" fill="#334155">Referenced Parent &amp; PK</text>
+    <text x="350" y="62" font-size="11" font-weight="bold" fill="#334155">Cardinality</text>
+    <text x="440" y="62" font-size="11" font-weight="bold" fill="#334155">Cascade Rule</text>
+
+    <!-- Row 1 -->
+    <text x="30" y="88" font-size="11" font-family="Consolas, monospace" fill="#0F172A">class.<tspan fill="#B91C1C" font-weight="bold">grade</tspan></text>
+    <text x="180" y="88" font-size="11" font-family="Consolas, monospace" fill="#0F172A">grades.<tspan fill="#0284C7" font-weight="bold">grade_id</tspan></text>
+    <text x="375" y="88" text-anchor="middle" font-size="11" font-weight="bold" fill="#0F172A">1 : N</text>
+    <text x="440" y="88" font-size="11" fill="#475569">ON UPDATE CASCADE</text>
+    <line x1="20" y1="98" x2="580" y2="98" stroke="#E2E8F0" stroke-width="1"/>
+
+    <!-- Row 2 -->
+    <text x="30" y="118" font-size="11" font-family="Consolas, monospace" fill="#0F172A">class.<tspan fill="#B91C1C" font-weight="bold">section</tspan></text>
+    <text x="180" y="118" font-size="11" font-family="Consolas, monospace" fill="#0F172A">section.<tspan fill="#0284C7" font-weight="bold">section_id</tspan></text>
+    <text x="375" y="118" text-anchor="middle" font-size="11" font-weight="bold" fill="#0F172A">1 : N</text>
+    <text x="440" y="118" font-size="11" fill="#475569">ON UPDATE CASCADE</text>
+
+    <!-- Explanatory note -->
+    <text x="20" y="152" font-size="10.5" fill="#64748B">
+      <tspan font-weight="bold">Business Semantics:</tspan> An instructional classroom cohort (class) is an associative pairing linking
+    </text>
+    <text x="20" y="168" font-size="10.5" fill="#64748B">
+      a grade standard (grades) with a physical section division (section).
+    </text>
+  </g>
+
+  <!-- Panel 2: Legend -->
+  <g transform="translate(760, 440)">
+    <rect width="520" height="180" rx="6" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="20" y="28" font-size="13" font-weight="bold" fill="#0F172A">ER NOTATION LEGEND &amp; EXTENSIBILITY (PART 1)</text>
+    <line x1="20" y1="36" x2="500" y2="36" stroke="#CBD5E1" stroke-width="1"/>
+
+    <text x="20" y="60" font-size="11" font-weight="bold" fill="#0F172A">Rectangle Box</text>
+    <text x="160" y="60" font-size="11" fill="#475569">Entity Table with exact columns from DATA_DICTIONARY.md</text>
+
+    <text x="20" y="82" font-size="11" font-weight="bold" fill="#0284C7">(PK) Underline</text>
+    <text x="160" y="82" font-size="11" fill="#475569">Primary Key (Unique, Auto-increment, Not Null)</text>
+
+    <text x="20" y="104" font-size="11" font-weight="bold" fill="#B91C1C">(FK) Tag</text>
+    <text x="160" y="104" font-size="11" fill="#475569">Foreign Key column maintaining InnoDB referential integrity</text>
+
+    <text x="20" y="126" font-size="11" font-weight="bold" fill="#0F172A">Rhombus / Diamond</text>
+    <text x="160" y="126" font-size="11" fill="#475569">Semantic relationship connector between parent and child</text>
+
+    <text x="20" y="148" font-size="11" font-weight="bold" fill="#0F172A">Cardinality 1 : N</text>
+    <text x="160" y="148" font-size="11" fill="#475569">One parent record maps to multiple child records</text>
+
+    <text x="20" y="170" font-size="10.5" fill="#64748B">
+      <tspan font-weight="bold">Part 2 Extension:</tspan> grades connects to subjects &amp; student; section connects to student.
+    </text>
+  </g>
+
+  <!-- FOOTER -->
+  <text x="700" y="660" text-anchor="middle" font-size="11" fill="#64748B">
+    School Management System Database (sms_db) | Editable Draw.io Diagram File: School_Management_ER_Part1.drawio | Open in diagrams.net
+  </text>
+</svg>

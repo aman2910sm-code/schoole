@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1550 1400" width="100%" height="100%" style="background:#ffffff; font-family: 'Times New Roman', Times, serif;">
+  <!-- Title -->
+  <rect x="60" y="25" width="1430" height="55" fill="#ffffff" stroke="#000000" stroke-width="1.8" />
+  <text x="775.0" y="48" font-size="16" font-weight="bold" text-anchor="middle" fill="#000000">Combined ER Diagram: Admin &amp; Registrar Modules (sms_db)</text>
+  <text x="775.0" y="67" font-size="11" font-style="italic" text-anchor="middle" fill="#000000">Strictly Supported by DATA_DICTIONARY.md | No Unsupported Relationships | Chen ER Notation</text>
+  <line x1="450.0" y1="310.0" x2="422.5" y2="206.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="310.0" x2="582.5" y2="206.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="310.0" x2="697.5" y2="331.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="310.0" x2="582.5" y2="456.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="310.0" x2="422.5" y2="456.0" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1002.5" y2="168.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1122.5" y2="168.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1242.5" y2="168.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1362.5" y2="168.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1417.5" y2="273.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1417.5" y2="333.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1417.5" y2="393.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1002.5" y2="498.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1122.5" y2="498.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1242.5" y2="498.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="1362.5" y2="498.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="847.5" y2="303.5" stroke="#000000" stroke-width="1" />
+  <line x1="1130.0" y1="312.5" x2="847.5" y2="363.5" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="750.0" x2="382.5" y2="641.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="750.0" x2="502.5" y2="641.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="750.0" x2="622.5" y2="641.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="750.0" x2="622.5" y2="901.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="750.0" x2="502.5" y2="901.0" stroke="#000000" stroke-width="1" />
+  <line x1="450.0" y1="750.0" x2="382.5" y2="901.0" stroke="#000000" stroke-width="1" />
+  <line x1="1120.0" y1="750.0" x2="1092.5" y2="641.0" stroke="#000000" stroke-width="1" />
+  <line x1="1120.0" y1="750.0" x2="1252.5" y2="641.0" stroke="#000000" stroke-width="1" />
+  <line x1="1120.0" y1="750.0" x2="1367.5" y2="771.0" stroke="#000000" stroke-width="1" />
+  <line x1="1120.0" y1="750.0" x2="1252.5" y2="901.0" stroke="#000000" stroke-width="1" />
+  <line x1="1120.0" y1="750.0" x2="1092.5" y2="901.0" stroke="#000000" stroke-width="1" />
+  <line x1="785.0" y1="1150.0" x2="757.5" y2="1046.0" stroke="#000000" stroke-width="1" />
+  <line x1="785.0" y1="1150.0" x2="917.5" y2="1046.0" stroke="#000000" stroke-width="1" />
+  <line x1="785.0" y1="1150.0" x2="1032.5" y2="1171.0" stroke="#000000" stroke-width="1" />
+  <line x1="785.0" y1="1150.0" x2="917.5" y2="1296.0" stroke="#000000" stroke-width="1" />
+  <line x1="785.0" y1="1150.0" x2="757.5" y2="1296.0" stroke="#000000" stroke-width="1" />
+
+  <!-- Entity: admin -->
+  <rect x="380" y="280" width="140" height="60" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <text x="450.0" y="315.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">admin</text>
+
+  <!-- Entity: registrar_office -->
+  <rect x="1050" y="280" width="160" height="65" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <text x="1130.0" y="317.5" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">registrar_office</text>
+
+  <!-- Entity: setting -->
+  <rect x="380" y="720" width="140" height="60" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <text x="450.0" y="755.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">setting</text>
+
+  <!-- Entity: courses -->
+  <rect x="1050" y="720" width="140" height="60" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <text x="1120.0" y="755.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">courses</text>
+
+  <!-- Entity: message -->
+  <rect x="715" y="1120" width="140" height="60" fill="#ffffff" stroke="#000000" stroke-width="2" />
+  <text x="785.0" y="1155.0" font-size="13" font-weight="bold" text-anchor="middle" fill="#000000">message</text>
+
+  <ellipse cx="422.5" cy="206.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="422.5" y="204.0" font-size="10" text-decoration="underline" text-anchor="middle" fill="#000000">admin_id</text>
+  <text x="422.5" y="216.0" font-size="9" font-weight="bold" text-anchor="middle" fill="#000000">(PK)</text>
+  <ellipse cx="582.5" cy="206.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="582.5" y="210.0" font-size="10" text-anchor="middle" fill="#000000">username</text>
+  <ellipse cx="697.5" cy="331.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="697.5" y="335.0" font-size="10" text-anchor="middle" fill="#000000">password</text>
+  <ellipse cx="582.5" cy="456.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="582.5" y="460.0" font-size="10" text-anchor="middle" fill="#000000">fname</text>
+  <ellipse cx="422.5" cy="456.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="422.5" y="460.0" font-size="10" text-anchor="middle" fill="#000000">lname</text>
+  <ellipse cx="1002.5" cy="168.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1002.5" y="166.5" font-size="10" text-decoration="underline" text-anchor="middle" fill="#000000">r_user_id</text>
+  <text x="1002.5" y="178.5" font-size="9" font-weight="bold" text-anchor="middle" fill="#000000">(PK)</text>
+  <ellipse cx="1122.5" cy="168.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1122.5" y="172.5" font-size="10" text-anchor="middle" fill="#000000">username</text>
+  <ellipse cx="1242.5" cy="168.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1242.5" y="172.5" font-size="10" text-anchor="middle" fill="#000000">password</text>
+  <ellipse cx="1362.5" cy="168.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1362.5" y="172.5" font-size="10" text-anchor="middle" fill="#000000">fname</text>
+  <ellipse cx="1417.5" cy="273.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1417.5" y="277.5" font-size="10" text-anchor="middle" fill="#000000">lname</text>
+  <ellipse cx="1417.5" cy="333.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1417.5" y="337.5" font-size="10" text-anchor="middle" fill="#000000">address</text>
+  <ellipse cx="1417.5" cy="393.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1417.5" y="397.5" font-size="10" text-anchor="middle" fill="#000000">employee_number</text>
+  <ellipse cx="1002.5" cy="498.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1002.5" y="502.5" font-size="10" text-anchor="middle" fill="#000000">date_of_birth</text>
+  <ellipse cx="1122.5" cy="498.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1122.5" y="502.5" font-size="10" text-anchor="middle" fill="#000000">phone_number</text>
+  <ellipse cx="1242.5" cy="498.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1242.5" y="502.5" font-size="10" text-anchor="middle" fill="#000000">qualification</text>
+  <ellipse cx="1362.5" cy="498.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1362.5" y="502.5" font-size="10" text-anchor="middle" fill="#000000">gender</text>
+  <ellipse cx="847.5" cy="303.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="847.5" y="307.5" font-size="10" text-anchor="middle" fill="#000000">email_address</text>
+  <ellipse cx="847.5" cy="363.5" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="847.5" y="367.5" font-size="10" text-anchor="middle" fill="#000000">date_of_joined</text>
+  <ellipse cx="382.5" cy="641.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="382.5" y="639.0" font-size="10" text-decoration="underline" text-anchor="middle" fill="#000000">id</text>
+  <text x="382.5" y="651.0" font-size="9" font-weight="bold" text-anchor="middle" fill="#000000">(PK)</text>
+  <ellipse cx="502.5" cy="641.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="502.5" y="645.0" font-size="10" text-anchor="middle" fill="#000000">current_year</text>
+  <ellipse cx="622.5" cy="641.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="622.5" y="645.0" font-size="10" text-anchor="middle" fill="#000000">current_semester</text>
+  <ellipse cx="622.5" cy="901.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="622.5" y="905.0" font-size="10" text-anchor="middle" fill="#000000">school_name</text>
+  <ellipse cx="502.5" cy="901.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="502.5" y="905.0" font-size="10" text-anchor="middle" fill="#000000">slogan</text>
+  <ellipse cx="382.5" cy="901.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="382.5" y="905.0" font-size="10" text-anchor="middle" fill="#000000">about</text>
+  <ellipse cx="1092.5" cy="641.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1092.5" y="639.0" font-size="10" text-decoration="underline" text-anchor="middle" fill="#000000">course_id</text>
+  <text x="1092.5" y="651.0" font-size="9" font-weight="bold" text-anchor="middle" fill="#000000">(PK)</text>
+  <ellipse cx="1252.5" cy="641.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1252.5" y="645.0" font-size="10" text-anchor="middle" fill="#000000">grade</text>
+  <ellipse cx="1367.5" cy="771.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1367.5" y="775.0" font-size="10" text-anchor="middle" fill="#000000">course_name</text>
+  <ellipse cx="1252.5" cy="901.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1252.5" y="905.0" font-size="10" text-anchor="middle" fill="#000000">grade_code</text>
+  <ellipse cx="1092.5" cy="901.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1092.5" y="905.0" font-size="10" text-anchor="middle" fill="#000000">course_code</text>
+  <ellipse cx="757.5" cy="1046.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="757.5" y="1044.0" font-size="10" text-decoration="underline" text-anchor="middle" fill="#000000">message_id</text>
+  <text x="757.5" y="1056.0" font-size="9" font-weight="bold" text-anchor="middle" fill="#000000">(PK)</text>
+  <ellipse cx="917.5" cy="1046.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="917.5" y="1050.0" font-size="10" text-anchor="middle" fill="#000000">sender_full_name</text>
+  <ellipse cx="1032.5" cy="1171.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1032.5" y="1175.0" font-size="10" text-anchor="middle" fill="#000000">sender_email</text>
+  <ellipse cx="917.5" cy="1296.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="917.5" y="1300.0" font-size="10" text-anchor="middle" fill="#000000">message</text>
+  <ellipse cx="757.5" cy="1296.0" rx="52.5" ry="21.0" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="757.5" y="1300.0" font-size="10" text-anchor="middle" fill="#000000">date_time</text>
+  <!-- Legend Box -->
+  <rect x="60" y="1315" width="1430" height="65" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="775.0" y="1331" font-size="11" font-weight="bold" text-anchor="middle" fill="#000000">ER SYMBOLS REFERENCE (Standard Chen Notation - Black &amp; White)</text>
+
+  <rect x="90" y="1341" width="70" height="28" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="125" y="1359" font-size="9" font-weight="bold" text-anchor="middle" fill="#000000">Entity</text>
+  <text x="170" y="1359" font-size="10" fill="#000000"><tspan font-weight="bold">Rectangle:</tspan> Entity</text>
+
+  <polygon points="340,1339 360,1355 340,1371 320,1355" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="340" y="1359" font-size="8" font-weight="bold" text-anchor="middle" fill="#000000">Rel</text>
+  <text x="375" y="1359" font-size="10" fill="#000000"><tspan font-weight="bold">Diamond:</tspan> Relationship</text>
+
+  <ellipse cx="570" cy="1355" rx="28" ry="14" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="570" y="1359" font-size="9" text-anchor="middle" fill="#000000">attr</text>
+  <text x="610" y="1359" font-size="10" fill="#000000"><tspan font-weight="bold">Oval:</tspan> Attribute</text>
+
+  <ellipse cx="765" cy="1355" rx="30" ry="16" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="765" y="1351" font-size="8" text-decoration="underline" text-anchor="middle" fill="#000000">id</text>
+  <text x="765" y="1363" font-size="8" font-weight="bold" text-anchor="middle" fill="#000000">(PK)</text>
+  <text x="810" y="1359" font-size="10" fill="#000000"><tspan font-weight="bold">Underlined Oval (PK):</tspan> Primary Key</text>
+
+  <ellipse cx="1060" cy="1355" rx="30" ry="16" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1060" y="1351" font-size="8" text-anchor="middle" fill="#000000">ref</text>
+  <text x="1060" y="1363" font-size="8" font-weight="bold" text-anchor="middle" fill="#000000">(FK)</text>
+  <text x="1105" y="1359" font-size="10" fill="#000000"><tspan font-weight="bold">Oval (FK):</tspan> Foreign Key</text>
+
+  <line x1="1280" y1="1355" x2="1335" y2="1355" stroke="#000000" stroke-width="1.5" />
+  <text x="1350" y="1359" font-size="10" fill="#000000"><tspan font-weight="bold">Line:</tspan> Connector</text>
+</svg>

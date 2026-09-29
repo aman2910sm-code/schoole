@@ -1,0 +1,452 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3500 2500" width="100%" height="100%" style="background-color: #ffffff; font-family: 'Segoe UI', Arial, Helvetica, sans-serif;">
+  <style>
+    .ent-rect { fill: #ffffff; stroke: #000000; stroke-width: 2.5px; }
+    .ent-text { font-size: 16px; font-weight: bold; fill: #000000; text-anchor: middle; dominant-baseline: middle; letter-spacing: 0.5px; }
+    .rel-dia { fill: #ffffff; stroke: #000000; stroke-width: 2px; }
+    .rel-text { font-size: 12px; font-weight: bold; fill: #000000; text-anchor: middle; dominant-baseline: middle; }
+    .att-reg { fill: #ffffff; stroke: #000000; stroke-width: 1.2px; }
+    .att-pk { fill: #ffffff; stroke: #000000; stroke-width: 2.5px; }
+    .att-fk { fill: #ffffff; stroke: #000000; stroke-width: 1.5px; stroke-dasharray: 4,3; }
+    .att-text { font-size: 11px; fill: #000000; text-anchor: middle; dominant-baseline: middle; }
+    .att-pk-text { font-size: 11px; font-weight: bold; text-decoration: underline; fill: #000000; text-anchor: middle; dominant-baseline: middle; }
+    .att-fk-text { font-size: 11px; font-weight: 600; fill: #000000; text-anchor: middle; dominant-baseline: middle; }
+    .conn-line { stroke: #000000; stroke-width: 1.2px; }
+    .rel-line { stroke: #000000; stroke-width: 1.8px; }
+    .card-label { font-size: 13px; font-weight: bold; fill: #000000; }
+  </style>
+  <defs>
+    <filter id="card-badge" x="0" y="0" width="100%" height="100%">
+      <feFlood flood-color="#ffffff"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <!-- Title Banner -->
+  <rect x="60" y="30" width="3380" height="70" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+  <text x="1750.0" y="57" text-anchor="middle" font-size="20px" font-weight="bold" fill="#000000">UNIFIED ENTITY-RELATIONSHIP (ER) DIAGRAM — SCHOOL MANAGEMENT SYSTEM (sms_db)</text>
+  <text x="1750.0" y="82" text-anchor="middle" font-size="13px" fill="#333333">Complete Relational Architecture Covering All 12 Database Tables | Peter Chen Notation Standard | Pure Black &amp; White (College Project Standard)</text>
+  <!-- Attribute Connecting Lines -->
+  <line x1="1150" y1="300" x2="1040" y2="155" class="conn-line" />
+  <line x1="1150" y1="300" x2="1260" y2="155" class="conn-line" />
+  <line x1="1150" y1="300" x2="880" y2="300" class="conn-line" />
+  <line x1="1150" y1="300" x2="1040" y2="445" class="conn-line" />
+  <line x1="1150" y1="300" x2="1260" y2="445" class="conn-line" />
+  <line x1="400" y1="300" x2="240" y2="150" class="conn-line" />
+  <line x1="400" y1="300" x2="400" y2="150" class="conn-line" />
+  <line x1="400" y1="300" x2="560" y2="150" class="conn-line" />
+  <line x1="400" y1="300" x2="560" y2="450" class="conn-line" />
+  <line x1="400" y1="300" x2="400" y2="450" class="conn-line" />
+  <line x1="400" y1="300" x2="240" y2="450" class="conn-line" />
+  <line x1="1850" y1="300" x2="1740" y2="155" class="conn-line" />
+  <line x1="1850" y1="300" x2="1960" y2="155" class="conn-line" />
+  <line x1="1850" y1="300" x2="1590" y2="300" class="conn-line" />
+  <line x1="1850" y1="300" x2="1740" y2="445" class="conn-line" />
+  <line x1="1850" y1="300" x2="1960" y2="445" class="conn-line" />
+  <line x1="2700" y1="300" x2="2460" y2="130" class="conn-line" />
+  <line x1="2700" y1="300" x2="2620" y2="130" class="conn-line" />
+  <line x1="2700" y1="300" x2="2780" y2="130" class="conn-line" />
+  <line x1="2700" y1="300" x2="2940" y2="130" class="conn-line" />
+  <line x1="2700" y1="300" x2="3005" y2="235" class="conn-line" />
+  <line x1="2700" y1="300" x2="3005" y2="300" class="conn-line" />
+  <line x1="2700" y1="300" x2="3005" y2="365" class="conn-line" />
+  <line x1="2700" y1="300" x2="2460" y2="470" class="conn-line" />
+  <line x1="2700" y1="300" x2="2620" y2="470" class="conn-line" />
+  <line x1="2700" y1="300" x2="2780" y2="470" class="conn-line" />
+  <line x1="2700" y1="300" x2="2940" y2="470" class="conn-line" />
+  <line x1="2700" y1="300" x2="2395" y2="265" class="conn-line" />
+  <line x1="2700" y1="300" x2="2395" y2="335" class="conn-line" />
+  <line x1="700" y1="950" x2="400" y2="765" class="conn-line" />
+  <line x1="700" y1="950" x2="550" y2="765" class="conn-line" />
+  <line x1="700" y1="950" x2="700" y2="765" class="conn-line" />
+  <line x1="700" y1="950" x2="850" y2="765" class="conn-line" />
+  <line x1="700" y1="950" x2="1000" y2="765" class="conn-line" />
+  <line x1="700" y1="950" x2="1015" y2="885" class="conn-line" />
+  <line x1="700" y1="950" x2="1015" y2="950" class="conn-line" />
+  <line x1="700" y1="950" x2="1015" y2="1015" class="conn-line" />
+  <line x1="700" y1="950" x2="400" y2="1135" class="conn-line" />
+  <line x1="700" y1="950" x2="550" y2="1135" class="conn-line" />
+  <line x1="700" y1="950" x2="700" y2="1135" class="conn-line" />
+  <line x1="700" y1="950" x2="850" y2="1135" class="conn-line" />
+  <line x1="700" y1="950" x2="1000" y2="1135" class="conn-line" />
+  <line x1="700" y1="950" x2="385" y2="885" class="conn-line" />
+  <line x1="700" y1="950" x2="385" y2="950" class="conn-line" />
+  <line x1="700" y1="950" x2="385" y2="1015" class="conn-line" />
+  <line x1="1650" y1="950" x2="1540" y2="805" class="conn-line" />
+  <line x1="1650" y1="950" x2="1760" y2="805" class="conn-line" />
+  <line x1="1650" y1="950" x2="1650" y2="1095" class="conn-line" />
+  <line x1="2700" y1="950" x2="2400" y2="765" class="conn-line" />
+  <line x1="2700" y1="950" x2="2550" y2="765" class="conn-line" />
+  <line x1="2700" y1="950" x2="2700" y2="765" class="conn-line" />
+  <line x1="2700" y1="950" x2="2850" y2="765" class="conn-line" />
+  <line x1="2700" y1="950" x2="3000" y2="765" class="conn-line" />
+  <line x1="2700" y1="950" x2="3015" y2="885" class="conn-line" />
+  <line x1="2700" y1="950" x2="3015" y2="950" class="conn-line" />
+  <line x1="2700" y1="950" x2="3015" y2="1015" class="conn-line" />
+  <line x1="2700" y1="950" x2="2400" y2="1135" class="conn-line" />
+  <line x1="2700" y1="950" x2="2550" y2="1135" class="conn-line" />
+  <line x1="2700" y1="950" x2="2700" y2="1135" class="conn-line" />
+  <line x1="2700" y1="950" x2="2850" y2="1135" class="conn-line" />
+  <line x1="2700" y1="950" x2="3000" y2="1135" class="conn-line" />
+  <line x1="2700" y1="950" x2="2385" y2="885" class="conn-line" />
+  <line x1="2700" y1="950" x2="2385" y2="950" class="conn-line" />
+  <line x1="2700" y1="950" x2="2385" y2="1015" class="conn-line" />
+  <line x1="450" y1="1580" x2="340" y2="1435" class="conn-line" />
+  <line x1="450" y1="1580" x2="560" y2="1435" class="conn-line" />
+  <line x1="450" y1="1580" x2="190" y2="1580" class="conn-line" />
+  <line x1="450" y1="1580" x2="340" y2="1725" class="conn-line" />
+  <line x1="450" y1="1580" x2="560" y2="1725" class="conn-line" />
+  <line x1="1150" y1="1580" x2="1040" y2="1435" class="conn-line" />
+  <line x1="1150" y1="1580" x2="1260" y2="1435" class="conn-line" />
+  <line x1="1150" y1="1580" x2="1150" y2="1725" class="conn-line" />
+  <line x1="2000" y1="1580" x2="1915" y2="1445" class="conn-line" />
+  <line x1="2000" y1="1580" x2="2085" y2="1445" class="conn-line" />
+  <line x1="850" y1="2150" x2="740" y2="2005" class="conn-line" />
+  <line x1="850" y1="2150" x2="960" y2="2005" class="conn-line" />
+  <line x1="850" y1="2150" x2="960" y2="2295" class="conn-line" />
+  <line x1="850" y1="2150" x2="740" y2="2295" class="conn-line" />
+  <line x1="2150" y1="2150" x2="1990" y2="1985" class="conn-line" />
+  <line x1="2150" y1="2150" x2="2150" y2="1985" class="conn-line" />
+  <line x1="2150" y1="2150" x2="2310" y2="1985" class="conn-line" />
+  <line x1="2150" y1="2150" x2="2445" y2="2150" class="conn-line" />
+  <line x1="2150" y1="2150" x2="2310" y2="2315" class="conn-line" />
+  <line x1="2150" y1="2150" x2="2150" y2="2315" class="conn-line" />
+  <line x1="2150" y1="2150" x2="1990" y2="2315" class="conn-line" />
+  <!-- Relationship Connecting Lines -->
+  <line x1="1150" y1="300" x2="750" y2="300" class="rel-line" />
+  <line x1="750" y1="300" x2="400" y2="300" class="rel-line" />
+  <rect x="978" y="288" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="990" y="300" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="528" y="288" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="540" y="300" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <line x1="1150" y1="300" x2="1500" y2="300" class="rel-line" />
+  <line x1="1500" y1="300" x2="1850" y2="300" class="rel-line" />
+  <rect x="1278" y="288" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1290" y="300" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="1698" y="288" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1710" y="300" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="1150" y1="300" x2="925" y2="625" class="rel-line" />
+  <line x1="925" y1="625" x2="700" y2="950" class="rel-line" />
+  <rect x="1048" y="418" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1060" y="430" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="778" y="808" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="790" y="820" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="1150" y1="300" x2="2250" y2="180" class="rel-line" />
+  <line x1="2250" y1="180" x2="2700" y2="300" class="rel-line" />
+  <rect x="1578" y="240" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1590" y="252" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="2508" y="240" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="2520" y="252" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="2700" y1="300" x2="2700" y2="625" class="rel-line" />
+  <line x1="2700" y1="625" x2="2700" y2="950" class="rel-line" />
+  <rect x="2688" y="418" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="2700" y="430" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="2688" y="808" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="2700" y="820" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="700" y1="950" x2="1175" y2="950" class="rel-line" />
+  <line x1="1175" y1="950" x2="1650" y2="950" class="rel-line" />
+  <rect x="878" y="938" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="890" y="950" text-anchor="middle" dominant-baseline="middle" class="card-label">M</text>
+  <rect x="1448" y="938" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1460" y="950" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="2700" y1="950" x2="2150" y2="950" class="rel-line" />
+  <line x1="2150" y1="950" x2="1650" y2="950" class="rel-line" />
+  <rect x="2468" y="938" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="2480" y="950" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <rect x="1838" y="938" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1850" y="950" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <line x1="1650" y1="950" x2="1400" y2="1265" class="rel-line" />
+  <line x1="1400" y1="1265" x2="1150" y2="1580" class="rel-line" />
+  <rect x="1538" y="1064" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1550" y="1076" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <rect x="1238" y="1442" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1250" y="1454" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <line x1="1650" y1="950" x2="1825" y2="1265" class="rel-line" />
+  <line x1="1825" y1="1265" x2="2000" y2="1580" class="rel-line" />
+  <rect x="1708" y="1064" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1720" y="1076" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <rect x="1918" y="1442" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1930" y="1454" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <line x1="1150" y1="1580" x2="800" y2="1580" class="rel-line" />
+  <line x1="800" y1="1580" x2="450" y2="1580" class="rel-line" />
+  <rect x="998" y="1568" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1010" y="1580" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="578" y="1568" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="590" y="1580" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="1150" y1="1580" x2="1000" y2="1865" class="rel-line" />
+  <line x1="1000" y1="1865" x2="850" y2="2150" class="rel-line" />
+  <rect x="1078" y="1682" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1090" y="1694" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="898" y="2024" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="910" y="2036" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="700" y1="950" x2="680" y2="1580" class="rel-line" />
+  <line x1="680" y1="1580" x2="850" y2="2150" class="rel-line" />
+  <rect x="680" y="1190" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="692" y="1202" text-anchor="middle" dominant-baseline="middle" class="card-label">M</text>
+  <rect x="770" y="1910" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="782" y="1922" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="2700" y1="950" x2="2450" y2="1600" class="rel-line" />
+  <line x1="2450" y1="1600" x2="2150" y2="2150" class="rel-line" />
+  <rect x="2588" y="1198" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="2600" y="1210" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="2258" y="1918" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="2270" y="1930" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="850" y1="2150" x2="1500" y2="2150" class="rel-line" />
+  <line x1="1500" y1="2150" x2="2150" y2="2150" class="rel-line" />
+  <rect x="1098" y="2138" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1110" y="2150" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="1878" y="2138" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1890" y="2150" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <line x1="700" y1="950" x2="1420" y2="1550" class="rel-line" />
+  <line x1="1420" y1="1550" x2="2150" y2="2150" class="rel-line" />
+  <rect x="976" y="1178" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="988" y="1190" text-anchor="middle" dominant-baseline="middle" class="card-label">1</text>
+  <rect x="1846" y="1898" width="24" height="24" fill="#ffffff" stroke="#000000" stroke-width="1" />
+  <text x="1858" y="1910" text-anchor="middle" dominant-baseline="middle" class="card-label">N</text>
+  <!-- Entity Rectangles -->
+  <rect x="1070" y="268" width="160" height="65" class="ent-rect" />
+  <text x="1150" y="300" class="ent-text">ADMIN</text>
+  <rect x="325" y="270" width="150" height="60" class="ent-rect" />
+  <text x="400" y="300" class="ent-text">SETTING</text>
+  <rect x="1775" y="270" width="150" height="60" class="ent-rect" />
+  <text x="1850" y="300" class="ent-text">MESSAGE</text>
+  <rect x="2605" y="268" width="190" height="65" class="ent-rect" />
+  <text x="2700" y="300" class="ent-text">REGISTRAR_OFFICE</text>
+  <rect x="620" y="915" width="160" height="70" class="ent-rect" />
+  <text x="700" y="950" class="ent-text">TEACHER</text>
+  <rect x="1575" y="920" width="150" height="60" class="ent-rect" />
+  <text x="1650" y="950" class="ent-text">CLASS</text>
+  <rect x="2620" y="915" width="160" height="70" class="ent-rect" />
+  <text x="2700" y="950" class="ent-text">STUDENT</text>
+  <rect x="375" y="1550" width="150" height="60" class="ent-rect" />
+  <text x="450" y="1580" class="ent-text">COURSES</text>
+  <rect x="1075" y="1550" width="150" height="60" class="ent-rect" />
+  <text x="1150" y="1580" class="ent-text">GRADES</text>
+  <rect x="1925" y="1550" width="150" height="60" class="ent-rect" />
+  <text x="2000" y="1580" class="ent-text">SECTION</text>
+  <rect x="775" y="2120" width="150" height="60" class="ent-rect" />
+  <text x="850" y="2150" class="ent-text">SUBJECTS</text>
+  <rect x="2065" y="2118" width="170" height="65" class="ent-rect" />
+  <text x="2150" y="2150" class="ent-text">STUDENT_SCORE</text>
+  <!-- Attribute Ellipses -->
+  <ellipse cx="1040" cy="155" rx="53" ry="18" class="att-pk" />
+  <text x="1040" y="155" class="att-pk-text">admin_id (PK)</text>
+  <ellipse cx="1260" cy="155" rx="45" ry="18" class="att-reg" />
+  <text x="1260" y="155" class="att-text">username</text>
+  <ellipse cx="880" cy="300" rx="45" ry="18" class="att-reg" />
+  <text x="880" y="300" class="att-text">password</text>
+  <ellipse cx="1040" cy="445" rx="38" ry="18" class="att-reg" />
+  <text x="1040" y="445" class="att-text">fname</text>
+  <ellipse cx="1260" cy="445" rx="38" ry="18" class="att-reg" />
+  <text x="1260" y="445" class="att-text">lname</text>
+  <ellipse cx="240" cy="150" rx="48" ry="18" class="att-pk" />
+  <text x="240" y="150" class="att-pk-text">id (PK)</text>
+  <ellipse cx="400" cy="150" rx="61" ry="18" class="att-reg" />
+  <text x="400" y="150" class="att-text">current_year</text>
+  <ellipse cx="560" cy="150" rx="77" ry="18" class="att-reg" />
+  <text x="560" y="150" class="att-text">current_semester</text>
+  <ellipse cx="560" cy="450" rx="57" ry="18" class="att-reg" />
+  <text x="560" y="450" class="att-text">school_name</text>
+  <ellipse cx="400" cy="450" rx="38" ry="18" class="att-reg" />
+  <text x="400" y="450" class="att-text">slogan</text>
+  <ellipse cx="240" cy="450" rx="38" ry="18" class="att-reg" />
+  <text x="240" y="450" class="att-text">about</text>
+  <ellipse cx="1740" cy="155" rx="61" ry="18" class="att-pk" />
+  <text x="1740" y="155" class="att-pk-text">message_id (PK)</text>
+  <ellipse cx="1960" cy="155" rx="77" ry="18" class="att-reg" />
+  <text x="1960" y="155" class="att-text">sender_full_name</text>
+  <ellipse cx="1590" cy="300" rx="61" ry="18" class="att-reg" />
+  <text x="1590" y="300" class="att-text">sender_email</text>
+  <ellipse cx="1740" cy="445" rx="41" ry="18" class="att-reg" />
+  <text x="1740" y="445" class="att-text">message</text>
+  <ellipse cx="1960" cy="445" rx="49" ry="18" class="att-reg" />
+  <text x="1960" y="445" class="att-text">date_time</text>
+  <ellipse cx="2460" cy="130" rx="57" ry="18" class="att-pk" />
+  <text x="2460" y="130" class="att-pk-text">r_user_id (PK)</text>
+  <ellipse cx="2620" cy="130" rx="45" ry="18" class="att-reg" />
+  <text x="2620" y="130" class="att-text">username</text>
+  <ellipse cx="2780" cy="130" rx="45" ry="18" class="att-reg" />
+  <text x="2780" y="130" class="att-text">password</text>
+  <ellipse cx="2940" cy="130" rx="38" ry="18" class="att-reg" />
+  <text x="2940" y="130" class="att-text">fname</text>
+  <ellipse cx="3005" cy="235" rx="38" ry="18" class="att-reg" />
+  <text x="3005" y="235" class="att-text">lname</text>
+  <ellipse cx="3005" cy="300" rx="41" ry="18" class="att-reg" />
+  <text x="3005" y="300" class="att-text">address</text>
+  <ellipse cx="3005" cy="365" rx="73" ry="18" class="att-reg" />
+  <text x="3005" y="365" class="att-text">employee_number</text>
+  <ellipse cx="2460" cy="470" rx="65" ry="18" class="att-reg" />
+  <text x="2460" y="470" class="att-text">date_of_birth</text>
+  <ellipse cx="2620" cy="470" rx="61" ry="18" class="att-reg" />
+  <text x="2620" y="470" class="att-text">phone_number</text>
+  <ellipse cx="2780" cy="470" rx="65" ry="18" class="att-reg" />
+  <text x="2780" y="470" class="att-text">qualification</text>
+  <ellipse cx="2940" cy="470" rx="38" ry="18" class="att-reg" />
+  <text x="2940" y="470" class="att-text">gender</text>
+  <ellipse cx="2395" cy="265" rx="65" ry="18" class="att-reg" />
+  <text x="2395" y="265" class="att-text">email_address</text>
+  <ellipse cx="2395" cy="335" rx="69" ry="18" class="att-reg" />
+  <text x="2395" y="335" class="att-text">date_of_joined</text>
+  <ellipse cx="400" cy="765" rx="61" ry="18" class="att-pk" />
+  <text x="400" y="765" class="att-pk-text">teacher_id (PK)</text>
+  <ellipse cx="550" cy="765" rx="45" ry="18" class="att-reg" />
+  <text x="550" y="765" class="att-text">username</text>
+  <ellipse cx="700" cy="765" rx="45" ry="18" class="att-reg" />
+  <text x="700" y="765" class="att-text">password</text>
+  <ellipse cx="850" cy="765" rx="43" ry="18" class="att-fk" />
+  <text x="850" y="765" class="att-fk-text">class (FK)</text>
+  <ellipse cx="1000" cy="765" rx="38" ry="18" class="att-reg" />
+  <text x="1000" y="765" class="att-text">fname</text>
+  <ellipse cx="1015" cy="885" rx="38" ry="18" class="att-reg" />
+  <text x="1015" y="885" class="att-text">lname</text>
+  <ellipse cx="1015" cy="950" rx="46" ry="18" class="att-fk" />
+  <text x="1015" y="950" class="att-fk-text">subjets (FK)</text>
+  <ellipse cx="1015" cy="1015" rx="46" ry="18" class="att-fk" />
+  <text x="1015" y="1015" class="att-fk-text">gradeId (FK)</text>
+  <ellipse cx="400" cy="1135" rx="41" ry="18" class="att-reg" />
+  <text x="400" y="1135" class="att-text">address</text>
+  <ellipse cx="550" cy="1135" rx="73" ry="18" class="att-reg" />
+  <text x="550" y="1135" class="att-text">employee_number</text>
+  <ellipse cx="700" cy="1135" rx="65" ry="18" class="att-reg" />
+  <text x="700" y="1135" class="att-text">date_of_birth</text>
+  <ellipse cx="850" cy="1135" rx="61" ry="18" class="att-reg" />
+  <text x="850" y="1135" class="att-text">phone_number</text>
+  <ellipse cx="1000" cy="1135" rx="65" ry="18" class="att-reg" />
+  <text x="1000" y="1135" class="att-text">qualification</text>
+  <ellipse cx="385" cy="885" rx="38" ry="18" class="att-reg" />
+  <text x="385" y="885" class="att-text">gender</text>
+  <ellipse cx="385" cy="950" rx="65" ry="18" class="att-reg" />
+  <text x="385" y="950" class="att-text">email_address</text>
+  <ellipse cx="385" cy="1015" rx="69" ry="18" class="att-reg" />
+  <text x="385" y="1015" class="att-text">date_of_joined</text>
+  <ellipse cx="1540" cy="805" rx="53" ry="18" class="att-pk" />
+  <text x="1540" y="805" class="att-pk-text">class_id (PK)</text>
+  <ellipse cx="1760" cy="805" rx="43" ry="18" class="att-fk" />
+  <text x="1760" y="805" class="att-fk-text">grade (FK)</text>
+  <ellipse cx="1650" cy="1095" rx="46" ry="18" class="att-fk" />
+  <text x="1650" y="1095" class="att-fk-text">section (FK)</text>
+  <ellipse cx="2400" cy="765" rx="61" ry="18" class="att-pk" />
+  <text x="2400" y="765" class="att-pk-text">student_id (PK)</text>
+  <ellipse cx="2550" cy="765" rx="45" ry="18" class="att-reg" />
+  <text x="2550" y="765" class="att-text">username</text>
+  <ellipse cx="2700" cy="765" rx="45" ry="18" class="att-reg" />
+  <text x="2700" y="765" class="att-text">password</text>
+  <ellipse cx="2850" cy="765" rx="38" ry="18" class="att-reg" />
+  <text x="2850" y="765" class="att-text">fname</text>
+  <ellipse cx="3000" cy="765" rx="38" ry="18" class="att-reg" />
+  <text x="3000" y="765" class="att-text">lname</text>
+  <ellipse cx="3015" cy="885" rx="43" ry="18" class="att-fk" />
+  <text x="3015" y="885" class="att-fk-text">grade (FK)</text>
+  <ellipse cx="3015" cy="950" rx="46" ry="18" class="att-fk" />
+  <text x="3015" y="950" class="att-fk-text">section (FK)</text>
+  <ellipse cx="3015" cy="1015" rx="41" ry="18" class="att-reg" />
+  <text x="3015" y="1015" class="att-text">address</text>
+  <ellipse cx="2400" cy="1135" rx="38" ry="18" class="att-reg" />
+  <text x="2400" y="1135" class="att-text">gender</text>
+  <ellipse cx="2550" cy="1135" rx="65" ry="18" class="att-reg" />
+  <text x="2550" y="1135" class="att-text">email_address</text>
+  <ellipse cx="2700" cy="1135" rx="65" ry="18" class="att-reg" />
+  <text x="2700" y="1135" class="att-text">date_of_birth</text>
+  <ellipse cx="2850" cy="1135" rx="69" ry="18" class="att-reg" />
+  <text x="2850" y="1135" class="att-text">date_of_joined</text>
+  <ellipse cx="3000" cy="1135" rx="61" ry="18" class="att-reg" />
+  <text x="3000" y="1135" class="att-text">parent_fname</text>
+  <ellipse cx="2385" cy="885" rx="61" ry="18" class="att-reg" />
+  <text x="2385" y="885" class="att-text">parent_lname</text>
+  <ellipse cx="2385" cy="950" rx="89" ry="18" class="att-reg" />
+  <text x="2385" y="950" class="att-text">parent_phone_number</text>
+  <ellipse cx="2385" cy="1015" rx="46" ry="18" class="att-fk" />
+  <text x="2385" y="1015" class="att-fk-text">subjets (FK)</text>
+  <ellipse cx="340" cy="1435" rx="57" ry="18" class="att-pk" />
+  <text x="340" y="1435" class="att-pk-text">course_id (PK)</text>
+  <ellipse cx="560" cy="1435" rx="43" ry="18" class="att-fk" />
+  <text x="560" y="1435" class="att-fk-text">grade (FK)</text>
+  <ellipse cx="190" cy="1580" rx="57" ry="18" class="att-reg" />
+  <text x="190" y="1580" class="att-text">course_name</text>
+  <ellipse cx="340" cy="1725" rx="53" ry="18" class="att-reg" />
+  <text x="340" y="1725" class="att-text">grade_code</text>
+  <ellipse cx="560" cy="1725" rx="57" ry="18" class="att-reg" />
+  <text x="560" y="1725" class="att-text">course_code</text>
+  <ellipse cx="1040" cy="1435" rx="53" ry="18" class="att-pk" />
+  <text x="1040" y="1435" class="att-pk-text">grade_id (PK)</text>
+  <ellipse cx="1260" cy="1435" rx="38" ry="18" class="att-reg" />
+  <text x="1260" y="1435" class="att-text">grade</text>
+  <ellipse cx="1150" cy="1725" rx="53" ry="18" class="att-reg" />
+  <text x="1150" y="1725" class="att-text">grade_code</text>
+  <ellipse cx="1915" cy="1445" rx="61" ry="18" class="att-pk" />
+  <text x="1915" y="1445" class="att-pk-text">section_id (PK)</text>
+  <ellipse cx="2085" cy="1445" rx="41" ry="18" class="att-reg" />
+  <text x="2085" y="1445" class="att-text">section</text>
+  <ellipse cx="740" cy="2005" rx="61" ry="18" class="att-pk" />
+  <text x="740" y="2005" class="att-pk-text">subject_id (PK)</text>
+  <ellipse cx="960" cy="2005" rx="41" ry="18" class="att-reg" />
+  <text x="960" y="2005" class="att-text">subject</text>
+  <ellipse cx="960" cy="2295" rx="61" ry="18" class="att-reg" />
+  <text x="960" y="2295" class="att-text">subject_code</text>
+  <ellipse cx="740" cy="2295" rx="43" ry="18" class="att-fk" />
+  <text x="740" y="2295" class="att-fk-text">grade (FK)</text>
+  <ellipse cx="1990" cy="1985" rx="48" ry="18" class="att-pk" />
+  <text x="1990" y="1985" class="att-pk-text">id (PK)</text>
+  <ellipse cx="2150" cy="1985" rx="45" ry="18" class="att-reg" />
+  <text x="2150" y="1985" class="att-text">semester</text>
+  <ellipse cx="2310" cy="1985" rx="38" ry="18" class="att-reg" />
+  <text x="2310" y="1985" class="att-text">year</text>
+  <ellipse cx="2445" cy="2150" rx="58" ry="18" class="att-fk" />
+  <text x="2445" y="2150" class="att-fk-text">student_id (FK)</text>
+  <ellipse cx="2310" cy="2315" rx="58" ry="18" class="att-fk" />
+  <text x="2310" y="2315" class="att-fk-text">teacher_id (FK)</text>
+  <ellipse cx="2150" cy="2315" rx="58" ry="18" class="att-fk" />
+  <text x="2150" y="2315" class="att-fk-text">subject_id (FK)</text>
+  <ellipse cx="1990" cy="2315" rx="41" ry="18" class="att-reg" />
+  <text x="1990" y="2315" class="att-text">results</text>
+  <!-- Relationship Diamonds -->
+  <polygon points="750,273 805,300 750,327 695,300" class="rel-dia" />
+  <text x="750" y="300" class="rel-text">configures</text>
+  <polygon points="1500,273 1550,300 1500,327 1450,300" class="rel-dia" />
+  <text x="1500" y="300" class="rel-text">reviews</text>
+  <polygon points="925,598 975,625 925,652 875,625" class="rel-dia" />
+  <text x="925" y="625" class="rel-text">manages</text>
+  <polygon points="2250,153 2305,180 2250,207 2195,180" class="rel-dia" />
+  <text x="2250" y="180" class="rel-text">supervises</text>
+  <polygon points="2700,598 2750,625 2700,652 2650,625" class="rel-dia" />
+  <text x="2700" y="625" class="rel-text">registers</text>
+  <polygon points="1175,923 1225,950 1175,977 1125,950" class="rel-dia" />
+  <text x="1175" y="950" class="rel-text">teaches</text>
+  <polygon points="2150,923 2205,950 2150,977 2095,950" class="rel-dia" />
+  <text x="2150" y="950" class="rel-text">enrolled_in</text>
+  <polygon points="1400,1238 1455,1265 1400,1292 1345,1265" class="rel-dia" />
+  <text x="1400" y="1265" class="rel-text">has_grade</text>
+  <polygon points="1825,1238 1880,1265 1825,1292 1770,1265" class="rel-dia" />
+  <text x="1825" y="1265" class="rel-text">has_section</text>
+  <polygon points="800,1553 850,1580 800,1607 750,1580" class="rel-dia" />
+  <text x="800" y="1580" class="rel-text">offers</text>
+  <polygon points="1000,1838 1050,1865 1000,1892 950,1865" class="rel-dia" />
+  <text x="1000" y="1865" class="rel-text">includes</text>
+  <polygon points="680,1553 730,1580 680,1607 630,1580" class="rel-dia" />
+  <text x="680" y="1580" class="rel-text">instructs</text>
+  <polygon points="2450,1573 2505,1600 2450,1627 2395,1600" class="rel-dia" />
+  <text x="2450" y="1600" class="rel-text">receives</text>
+  <polygon points="1500,2123 1555,2150 1500,2177 1445,2150" class="rel-dia" />
+  <text x="1500" y="2150" class="rel-text">assessed_in</text>
+  <polygon points="1420,1523 1475,1550 1420,1577 1365,1550" class="rel-dia" />
+  <text x="1420" y="1550" class="rel-text">evaluates</text>
+  <!-- Legend Bar -->
+  <rect x="60" y="2370" width="3380" height="90" fill="#ffffff" stroke="#000000" stroke-width="2.5" />
+  <text x="80" y="2394" font-size="13px" font-weight="bold" fill="#000000">PETER CHEN ER DIAGRAM NOTATION LEGEND (COLLEGE PROJECT STANDARD)</text>
+  <rect x="90" y="2410" width="90" height="35" class="ent-rect" />
+  <text x="135" y="2428" class="ent-text" font-size="11px">ENTITY</text>
+  <text x="190" y="2432" font-size="12px" fill="#000000">Entity / Database Table</text>
+  <polygon points="395,2407 430,2427 395,2447 360,2427" class="rel-dia" />
+  <text x="395" y="2427" class="rel-text">Rel</text>
+  <text x="445" y="2432" font-size="12px" fill="#000000">Relationship (Diamond)</text>
+  <ellipse cx="660" cy="2427" rx="40" ry="17" class="att-reg" />
+  <text x="660" y="2427" class="att-text">attribute</text>
+  <text x="710" y="2432" font-size="12px" fill="#000000">Regular Attribute</text>
+  <ellipse cx="910" cy="2427" rx="45" ry="17" class="att-pk" />
+  <text x="910" y="2427" class="att-pk-text">id (PK)</text>
+  <text x="965" y="2432" font-size="12px" fill="#000000">Primary Key (Underlined + PK)</text>
+  <ellipse cx="1230" cy="2427" rx="45" ry="17" class="att-fk" />
+  <text x="1230" y="2427" class="att-fk-text">fk_id (FK)</text>
+  <text x="1285" y="2432" font-size="12px" fill="#000000">Foreign Key (Dashed + FK)</text>
+  <rect x="1510" y="2414" width="50" height="26" fill="#ffffff" stroke="#000000" stroke-width="1.2" />
+  <text x="1535" y="2427" text-anchor="middle" dominant-baseline="middle" font-size="12px" font-weight="bold" fill="#000000">1 : N</text>
+  <text x="1570" y="2432" font-size="12px" fill="#000000">Cardinality Multiplicity (1:1, 1:N, M:N)</text>
+</svg>
